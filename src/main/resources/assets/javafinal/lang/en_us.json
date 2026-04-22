@@ -1,4 +1,7 @@
 {
-  "item.javafinal.bismuth": "Bismuth",
-  "item.javafinal.raw_bismuth": "Raw Bismuth"
+  "item.javafinal.obamium": "Obamium",
+  "item.javafinal.raw_obamium": "Raw Obamium",
+
+  "block.javafinal.obamium_block": "Block of Obamium",
+  "block.javafinal.obamium_ore": "Obamium Ore"
 }

@@ -1,5 +1,6 @@
 package com.hotgo.javafinal;
 
+import com.hotgo.javafinal.block.ModBlocks;
 import com.hotgo.javafinal.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -40,6 +41,7 @@ public class JavaFinal {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -55,8 +57,12 @@ public class JavaFinal {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.BISMUTH);
-            event.accept(ModItems.RAW_BISMUTH);
+            event.accept(ModItems.OBAMIUM);
+            event.accept(ModItems.RAW_OBAMIUM);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.OBAMIUM_BLOCK);
+            event.accept(ModBlocks.OBAMIUM_ORE);
         }
     }
 

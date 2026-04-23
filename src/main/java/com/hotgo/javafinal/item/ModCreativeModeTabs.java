@@ -33,6 +33,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.OBAMIUM_BLOCK);
                         output.accept(ModBlocks.OBAMIUM_ORE);
+                        output.accept(ModBlocks.OBAMIUM_DEEPSLATE_ORE);
 
                     }).build());
 

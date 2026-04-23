@@ -35,6 +35,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OBAMIUM_ORE);
                         output.accept(ModBlocks.OBAMIUM_DEEPSLATE_ORE);
 
+                        output.accept(ModBlocks.MAGIC_BLOCK);
+
                     }).build());
 
 

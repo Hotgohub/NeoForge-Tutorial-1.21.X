@@ -1,6 +1,7 @@
 package com.hotgo.javafinal.item;
 
 import com.hotgo.javafinal.JavaFinal;
+import com.hotgo.javafinal.item.custom.ChiselItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -14,6 +15,11 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_OBAMIUM = ITEMS.register("raw_obamium",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties()
+                    .durability(32)
+            ));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

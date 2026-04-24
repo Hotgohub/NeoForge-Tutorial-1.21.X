@@ -3,19 +3,37 @@ package com.hotgo.javafinal.item;
 import com.hotgo.javafinal.JavaFinal;
 import com.hotgo.javafinal.item.custom.ChiselItem;
 import com.hotgo.javafinal.item.custom.FuelItem;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
+
 //Basically all items are going to be a 'public static final'//
 public class ModItems {
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(JavaFinal.MOD_ID);
     //Blocks
     public static final DeferredItem<Item> OBAMIUM = ITEMS.register("obamium",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties()){
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.javafinal.obamium.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
     public static final DeferredItem<Item> RAW_OBAMIUM = ITEMS.register("raw_obamium",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties()){
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.javafinal.raw_obamium.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     //Custom Items
     public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
@@ -25,13 +43,31 @@ public class ModItems {
 
     //Consumable Items
     public static final DeferredItem<Item> ORANGE_JUICE = ITEMS.register("orange_juice",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.ORANGE_JUICE)));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ORANGE_JUICE)) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.javafinal.orange_juice.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     //Fuels
     public static final DeferredItem<Item> FIRE_PNG = ITEMS.register("fire_png",
-            () -> new FuelItem(new Item.Properties(), 800));
+            () -> new FuelItem(new Item.Properties(), 800){
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.javafinal.fire_png.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
     public static final DeferredItem<Item> THE_WHITE_HOUSE = ITEMS.register("the_white_house",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties()){
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.javafinal.the_white_house.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
 
     public static void register(IEventBus eventBus) {

@@ -1,18 +1,31 @@
 {
   "item.javafinal.obamium": "Obamium",
+  "tooltip.javafinal.obamium.tooltip": "A strange ore from a strange land.",
   "item.javafinal.raw_obamium": "Raw Obamium",
+  "tooltip.javafinal.raw_obamium.tooltip": "Smelt it to get its pure form.",
   "item.javafinal.chisel": "Chisel",
+  "tooltip.javafinal.chisel.shift_down": "A strange chisel to chip away at your broken heart.",
+  "tooltip.javafinal.chisel": "§lHOLD SHIFT§r",
 
   "item.javafinal.orange_juice": "Orange Juice",
+  "tooltip.javafinal.orange_juice.tooltip": "Drink this to feel refreshed!",
   "item.javafinal.fire_png": "Fire.png",
-  "item.javafinal.the_white_house": "The Entire White House",
+  "tooltip.javafinal.fire_png.tooltip": "§kPlease help. It hurts.§r",
+  "item.javafinal.the_white_house": "The White House",
+  "tooltip.javafinal.the_white_house.tooltip": "It's the entire white house. §lHow did you get this?§r",
 
   "block.javafinal.obamium_block": "Block of Obamium",
+  "tooltip.javafinal.obamium_block.tooltip": "A condensed, purer form of that ore you found.",
   "block.javafinal.obamium_ore": "Obamium Ore",
   "block.javafinal.obamium_deepslate_ore": "Deepslate Obamium Ore",
 
   "block.javafinal.magic_block": "Magic Block",
+  "tooltip.javafinal.magic_block.tooltip": "A magical block that can make your §lwildest§r dreams come true.",
 
   "creativetab.javafinal.obama_items": "Obama Items",
   "creativetab.javafinal.obama_blocks": "Obama Blocks"
+
+
+
+
 }

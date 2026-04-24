@@ -53,7 +53,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of()
                     .strength(2f)
-                    .requiresCorrectToolForDrops()));
+                    .noLootTable()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

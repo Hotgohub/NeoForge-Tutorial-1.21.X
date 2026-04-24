@@ -22,7 +22,12 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.OBAMIUM);
                         output.accept(ModItems.RAW_OBAMIUM);
+
                         output.accept(ModItems.CHISEL);
+                        output.accept(ModItems.ORANGE_JUICE);
+
+                        output.accept(ModItems.FIRE_PNG);
+                        output.accept(ModItems.THE_WHITE_HOUSE);
                     }).build());
 
     public static final Supplier<CreativeModeTab> OBAMA_BLOCKS_TAB = CREATIVE_MODE_TAB.register("obama_blocks_tab",

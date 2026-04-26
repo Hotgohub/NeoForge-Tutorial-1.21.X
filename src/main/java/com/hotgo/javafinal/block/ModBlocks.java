@@ -2,6 +2,7 @@ package com.hotgo.javafinal.block;
 
 import com.hotgo.javafinal.JavaFinal;
 import com.hotgo.javafinal.block.custom.MagicBlock;
+import com.hotgo.javafinal.block.custom.RedLampBlock;
 import com.hotgo.javafinal.item.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -101,7 +102,11 @@ public class ModBlocks {
                             .strength(2f)
                             .requiresCorrectToolForDrops()
                             .noOcclusion()));
-
+    public static final DeferredBlock<Block> RED_LAMP = registerBlock("red_lamp",
+            () -> new RedLampBlock(BlockBehaviour.Properties.of()
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(RedLampBlock.CLICKED) ? 15 : 0)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

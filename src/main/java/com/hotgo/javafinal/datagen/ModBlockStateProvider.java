@@ -2,8 +2,11 @@ package com.hotgo.javafinal.datagen;
 
 import com.hotgo.javafinal.JavaFinal;
 import com.hotgo.javafinal.block.ModBlocks;
+import com.hotgo.javafinal.block.custom.RedLampBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -42,6 +45,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.OBAMIUM_PRESSURE_PLATE);
         blockItem(ModBlocks.OBAMIUM_FENCE_GATE);
         blockItem(ModBlocks.OBAMIUM_TRAPDOOR, "_bottom");
+
+        customLamp();
+    }
+
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.RED_LAMP.get()).forAllStates(state -> {
+            if(state.getValue(RedLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("red_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "block/" + "red_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("red_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "block/" + "red_lamp_off")))};
+            }
+        });
+        simpleBlockItem(ModBlocks.RED_LAMP.get(), models().cubeAll("red_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "block/" + "red_lamp_on")));
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

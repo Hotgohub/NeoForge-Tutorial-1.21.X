@@ -55,6 +55,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OBAMIUM_DOOR);
                         output.accept(ModBlocks.OBAMIUM_TRAPDOOR);
 
+                        output.accept(ModBlocks.RED_LAMP);
+
                     }).build());
 
 

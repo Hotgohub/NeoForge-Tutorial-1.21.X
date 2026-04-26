@@ -19,6 +19,16 @@
   "block.javafinal.obamium_ore": "Obamium Ore",
   "block.javafinal.obamium_deepslate_ore": "Deepslate Obamium Ore",
 
+  "block.javafinal.obamium_stairs": "Obamium Stairs",
+  "block.javafinal.obamium_slab": "Obamium Slab",
+  "block.javafinal.obamium_pressure_plate": "Obamium Pressure Plate",
+  "block.javafinal.obamium_button": "Obamium Button",
+  "block.javafinal.obamium_fence": "Obamium Fence",
+  "block.javafinal.obamium_fence_gate": "Obamium Fence Gate",
+  "block.javafinal.obamium_wall": "Obamium Wall",
+  "block.javafinal.obamium_door": "Obamium Door",
+  "block.javafinal.obamium_trapdoor": "Obamium Trapdoor",
+
   "block.javafinal.magic_block": "Magic Block",
   "tooltip.javafinal.magic_block.tooltip": "A magical block that can make your §lwildest§r dreams come true.",
 

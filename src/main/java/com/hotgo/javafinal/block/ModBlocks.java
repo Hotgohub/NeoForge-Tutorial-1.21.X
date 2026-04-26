@@ -9,14 +9,15 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.awt.*;
 import java.util.List;
 import java.util.function.Supplier;
 
@@ -54,6 +55,53 @@ public class ModBlocks {
             () -> new MagicBlock(BlockBehaviour.Properties.of()
                     .strength(2f)
                     .noLootTable()));
+
+    public static final DeferredBlock<StairBlock> OBAMIUM_STAIRS = registerBlock("obamium_stairs",
+            () -> new StairBlock(ModBlocks.OBAMIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<SlabBlock> OBAMIUM_SLAB = registerBlock("obamium_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<PressurePlateBlock> OBAMIUM_PRESSURE_PLATE = registerBlock("obamium_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON,
+                    BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<ButtonBlock> OBAMIUM_BUTTON = registerBlock("obamium_button",
+            () -> new ButtonBlock(BlockSetType.IRON, 20,
+                    BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .requiresCorrectToolForDrops()
+                            .noCollission()));
+
+    public static final DeferredBlock<FenceBlock> OBAMIUM_FENCE = registerBlock("obamium_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<FenceGateBlock> OBAMIUM_FENCE_GATE = registerBlock("obamium_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<WallBlock> OBAMIUM_WALL = registerBlock("obamium_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<DoorBlock> OBAMIUM_DOOR = registerBlock("obamium_door",
+            () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .requiresCorrectToolForDrops()
+                            .noOcclusion()));
+    public static final DeferredBlock<TrapDoorBlock> OBAMIUM_TRAPDOOR = registerBlock("obamium_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .requiresCorrectToolForDrops()
+                            .noOcclusion()));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

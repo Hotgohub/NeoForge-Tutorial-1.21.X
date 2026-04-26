@@ -26,5 +26,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.OBAMIUM_DEEPSLATE_ORE.get());
 
+        tag(BlockTags.FENCES).add(ModBlocks.OBAMIUM_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.OBAMIUM_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.OBAMIUM_WALL.get());
+
     }
 }

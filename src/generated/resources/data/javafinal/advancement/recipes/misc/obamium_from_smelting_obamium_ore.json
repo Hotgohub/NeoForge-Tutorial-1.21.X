@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_obamium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "javafinal:obamium_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "javafinal:obamium_from_smelting_obamium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_obamium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "javafinal:obamium_from_smelting_obamium_ore"
+    ]
+  }
+}

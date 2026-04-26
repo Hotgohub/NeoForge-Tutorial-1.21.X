@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "obamium",
+  "key": {
+    "#": {
+      "item": "javafinal:obamium"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "javafinal:obamium_door"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "obamium",
+  "ingredients": [
+    {
+      "item": "javafinal:obamium"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "javafinal:obamium_button"
+  }
+}

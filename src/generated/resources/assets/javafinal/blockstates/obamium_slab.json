@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "javafinal:block/obamium_slab"
+    },
+    "type=double": {
+      "model": "javafinal:block/obamium_block"
+    },
+    "type=top": {
+      "model": "javafinal:block/obamium_slab_top"
+    }
+  }
+}

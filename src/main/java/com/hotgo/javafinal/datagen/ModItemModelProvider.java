@@ -1,10 +1,15 @@
 package com.hotgo.javafinal.datagen;
 
 import com.hotgo.javafinal.JavaFinal;
+import com.hotgo.javafinal.block.ModBlocks;
 import com.hotgo.javafinal.item.ModItems;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
+
 //This class helps to create .json files for Item Models
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -18,10 +23,33 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAW_OBAMIUM.get());
 
         basicItem(ModItems.CHISEL.get());
-
         basicItem(ModItems.ORANGE_JUICE.get());
-
         basicItem(ModItems.FIRE_PNG.get());
         basicItem(ModItems.THE_WHITE_HOUSE.get());
+
+        buttonItem(ModBlocks.OBAMIUM_BUTTON, ModBlocks.OBAMIUM_BLOCK);
+        fenceItem(ModBlocks.OBAMIUM_FENCE, ModBlocks.OBAMIUM_BLOCK);
+        wallItem(ModBlocks.OBAMIUM_WALL, ModBlocks.OBAMIUM_BLOCK);
+
+        basicItem(ModBlocks.OBAMIUM_DOOR.asItem());
+
+
+    }
+    public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/button_inventory"))
+                .texture("texture",  ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
+    }
+
+    public void fenceItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
+    }
+
+    public void wallItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
     }
 }

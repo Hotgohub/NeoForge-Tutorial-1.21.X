@@ -42,6 +42,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(recipeOutput, OBAMIUM_SMELTABLES, RecipeCategory.MISC, ModItems.OBAMIUM.get(), 0.25f, 200, "obamium");
         oreBlasting(recipeOutput, OBAMIUM_SMELTABLES, RecipeCategory.MISC, ModItems.OBAMIUM.get(), 0.25f, 100, "obamium");
+
+        stairBuilder(ModBlocks.OBAMIUM_STAIRS.get(), Ingredient.of(ModItems.OBAMIUM)).group("obamium")
+                .unlockedBy("has_obamium", has(ModItems.OBAMIUM)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBAMIUM_SLAB.get(), ModItems.OBAMIUM.get());
+
+        buttonBuilder(ModBlocks.OBAMIUM_BUTTON.get(), Ingredient.of(ModItems.OBAMIUM.get())).group("obamium")
+                .unlockedBy("has_obamium", has(ModItems.OBAMIUM.get())).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.OBAMIUM_PRESSURE_PLATE.get(), ModItems.OBAMIUM.get());
+
+        fenceBuilder(ModBlocks.OBAMIUM_FENCE.get(), Ingredient.of(ModItems.OBAMIUM.get())).group("obamium")
+                .unlockedBy("has_obamium", has(ModItems.OBAMIUM.get())).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.OBAMIUM_FENCE_GATE.get(), Ingredient.of(ModItems.OBAMIUM.get())).group("obamium")
+                .unlockedBy("has_obamium", has(ModItems.OBAMIUM.get())).save(recipeOutput);
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.OBAMIUM_WALL.get(), ModItems.OBAMIUM.get());
+
+        doorBuilder(ModBlocks.OBAMIUM_DOOR.get(), Ingredient.of(ModItems.OBAMIUM.get())).group("obamium")
+                .unlockedBy("has_obamium", has(ModItems.OBAMIUM.get())).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.OBAMIUM_TRAPDOOR.get(), Ingredient.of(ModItems.OBAMIUM.get())).group("obamium")
+                .unlockedBy("has_obamium", has(ModItems.OBAMIUM.get())).save(recipeOutput);
+
     }
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
                                       float pExperience, int pCookingTIme, String pGroup) {

@@ -42,6 +42,19 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.MAGIC_BLOCK);
 
+                        output.accept(ModBlocks.OBAMIUM_STAIRS);
+                        output.accept(ModBlocks.OBAMIUM_SLAB);
+
+                        output.accept(ModBlocks.OBAMIUM_PRESSURE_PLATE);
+                        output.accept(ModBlocks.OBAMIUM_BUTTON);
+
+                        output.accept(ModBlocks.OBAMIUM_FENCE);
+                        output.accept(ModBlocks.OBAMIUM_FENCE_GATE);
+                        output.accept(ModBlocks.OBAMIUM_WALL);
+
+                        output.accept(ModBlocks.OBAMIUM_DOOR);
+                        output.accept(ModBlocks.OBAMIUM_TRAPDOOR);
+
                     }).build());
 
 

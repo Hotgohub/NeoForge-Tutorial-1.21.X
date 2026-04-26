@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_obamium_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "javafinal:obamium_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "javafinal:obamium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_obamium_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "javafinal:obamium"
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 package com.hotgo.javafinal;
 
 import com.hotgo.javafinal.block.ModBlocks;
+import com.hotgo.javafinal.component.ModDataComponents;
 import com.hotgo.javafinal.item.ModCreativeModeTabs;
 import com.hotgo.javafinal.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -44,6 +45,8 @@ public class JavaFinal {
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponents.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

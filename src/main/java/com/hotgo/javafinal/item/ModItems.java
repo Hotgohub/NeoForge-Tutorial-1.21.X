@@ -3,6 +3,7 @@ package com.hotgo.javafinal.item;
 import com.hotgo.javafinal.JavaFinal;
 import com.hotgo.javafinal.item.custom.ChiselItem;
 import com.hotgo.javafinal.item.custom.FuelItem;
+import com.hotgo.javafinal.item.custom.HammerItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -86,6 +87,10 @@ public class ModItems {
     public static final DeferredItem<HoeItem> OBAMIUM_HOE = ITEMS.register("obamium_hoe",
             () -> new HoeItem(ModToolTiers.OBAMIUM, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.OBAMIUM, 0f, -3.0f))));
+
+    public static final DeferredItem<HammerItem> OBAMIUM_HAMMER = ITEMS.register("obamium_hammer",
+            () -> new HammerItem(ModToolTiers.OBAMIUM, new Item.Properties()
+                    .attributes(HammerItem.createAttributes(ModToolTiers.OBAMIUM, 7f, -3.5f))));
 
 
     public static void register(IEventBus eventBus) {

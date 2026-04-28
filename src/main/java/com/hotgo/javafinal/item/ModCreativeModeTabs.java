@@ -28,6 +28,12 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.FIRE_PNG);
                         output.accept(ModItems.THE_WHITE_HOUSE);
+
+                        output.accept(ModItems.OBAMIUM_SWORD);
+                        output.accept(ModItems.OBAMIUM_PICKAXE);
+                        output.accept(ModItems.OBAMIUM_SHOVEL);
+                        output.accept(ModItems.OBAMIUM_AXE);
+                        output.accept(ModItems.OBAMIUM_HOE);
                     }).build());
 
     public static final Supplier<CreativeModeTab> OBAMA_BLOCKS_TAB = CREATIVE_MODE_TAB.register("obama_blocks_tab",
@@ -56,6 +62,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OBAMIUM_TRAPDOOR);
 
                         output.accept(ModBlocks.RED_LAMP);
+
+
 
                     }).build());
 

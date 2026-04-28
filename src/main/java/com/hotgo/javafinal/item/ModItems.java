@@ -4,9 +4,7 @@ import com.hotgo.javafinal.JavaFinal;
 import com.hotgo.javafinal.item.custom.ChiselItem;
 import com.hotgo.javafinal.item.custom.FuelItem;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -68,6 +66,26 @@ public class ModItems {
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
+
+    public static final DeferredItem<SwordItem> OBAMIUM_SWORD = ITEMS.register("obamium_sword",
+            () -> new SwordItem(ModToolTiers.OBAMIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.OBAMIUM, 5, -2.4f))));
+
+    public static final DeferredItem<PickaxeItem> OBAMIUM_PICKAXE = ITEMS.register("obamium_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.OBAMIUM, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.OBAMIUM, 1.0f, -2.8f))));
+
+    public static final DeferredItem<ShovelItem> OBAMIUM_SHOVEL = ITEMS.register("obamium_shovel",
+            () -> new ShovelItem(ModToolTiers.OBAMIUM, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.OBAMIUM, 1.5f, -3.0f))));
+
+    public static final DeferredItem<AxeItem> OBAMIUM_AXE = ITEMS.register("obamium_axe",
+            () -> new AxeItem(ModToolTiers.OBAMIUM, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.OBAMIUM, 6.0f, -3.2f))));
+
+    public static final DeferredItem<HoeItem> OBAMIUM_HOE = ITEMS.register("obamium_hoe",
+            () -> new HoeItem(ModToolTiers.OBAMIUM, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.OBAMIUM, 0f, -3.0f))));
 
 
     public static void register(IEventBus eventBus) {

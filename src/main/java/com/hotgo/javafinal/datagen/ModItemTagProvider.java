@@ -6,6 +6,7 @@ import com.hotgo.javafinal.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -27,5 +28,17 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.COAL)
                 .add(Items.STICK)
                 .add(Items.COMPASS);
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.OBAMIUM_SWORD.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.OBAMIUM_PICKAXE.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.OBAMIUM_SHOVEL.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.OBAMIUM_AXE.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.OBAMIUM_HOE.get());
+
     }
 }

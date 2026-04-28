@@ -14,6 +14,12 @@
   "item.javafinal.the_white_house": "The White House",
   "tooltip.javafinal.the_white_house.tooltip": "It's the entire white house. §lHow did you get this?§r",
 
+  "item.javafinal.obamium_sword": "Obamium Sword",
+  "item.javafinal.obamium_pickaxe": "Obamium Pickaxe",
+  "item.javafinal.obamium_shovel": "Obamium Shovel",
+  "item.javafinal.obamium_axe": "Obamium Axe",
+  "item.javafinal.obamium_hoe": "Obamium Hoe",
+
   "block.javafinal.obamium_block": "Block of Obamium",
   "tooltip.javafinal.obamium_block.tooltip": "A condensed, purer form of that ore you found.",
   "block.javafinal.obamium_ore": "Obamium Ore",

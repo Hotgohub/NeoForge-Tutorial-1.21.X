@@ -40,5 +40,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.HOES)
                 .add(ModItems.OBAMIUM_HOE.get());
 
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.OBAMIUM_HELMET.get())
+                .add(ModItems.OBAMIUM_CHESTPLATE.get())
+                .add(ModItems.OBAMIUM_LEGGINGS.get())
+                .add(ModItems.OBAMIUM_BOOTS.get());
+
     }
 }

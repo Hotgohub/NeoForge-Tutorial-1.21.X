@@ -36,6 +36,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.OBAMIUM_HOE);
 
                         output.accept(ModItems.OBAMIUM_HAMMER);
+
+                        output.accept(ModItems.OBAMIUM_HELMET);
+                        output.accept(ModItems.OBAMIUM_CHESTPLATE);
+                        output.accept(ModItems.OBAMIUM_LEGGINGS);
+                        output.accept(ModItems.OBAMIUM_BOOTS);
                     }).build());
 
     public static final Supplier<CreativeModeTab> OBAMA_BLOCKS_TAB = CREATIVE_MODE_TAB.register("obama_blocks_tab",

@@ -92,6 +92,22 @@ public class ModItems {
             () -> new HammerItem(ModToolTiers.OBAMIUM, new Item.Properties()
                     .attributes(HammerItem.createAttributes(ModToolTiers.OBAMIUM, 7f, -3.5f))));
 
+    public static final DeferredItem<ArmorItem> OBAMIUM_HELMET = ITEMS.register("obamium_helmet",
+            () -> new ArmorItem(ModArmorMaterials.OBAMIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
+
+    public static final DeferredItem<ArmorItem> OBAMIUM_CHESTPLATE = ITEMS.register("obamium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.OBAMIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+
+    public static final DeferredItem<ArmorItem> OBAMIUM_LEGGINGS = ITEMS.register("obamium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.OBAMIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+
+    public static final DeferredItem<ArmorItem> OBAMIUM_BOOTS = ITEMS.register("obamium_boots",
+            () -> new ArmorItem(ModArmorMaterials.OBAMIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

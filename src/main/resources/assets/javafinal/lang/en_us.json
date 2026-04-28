@@ -22,6 +22,11 @@
 
   "item.javafinal.obamium_hammer": "Obamium Hammer",
 
+  "item.javafinal.obamium_helmet": "Obamium Helmet",
+  "item.javafinal.obamium_chestplate": "Obamium Chestplate",
+  "item.javafinal.obamium_leggings": "Obamium Leggings",
+  "item.javafinal.obamium_boots": "Obamium Boots",
+
   "block.javafinal.obamium_block": "Block of Obamium",
   "tooltip.javafinal.obamium_block.tooltip": "A condensed, purer form of that ore you found.",
   "block.javafinal.obamium_ore": "Obamium Ore",

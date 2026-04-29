@@ -42,7 +42,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        //to add new item for data gen Ctrl+D to dupe then add the item after the ModItems//
         basicItem(ModItems.OBAMIUM.get());
         basicItem(ModItems.RAW_OBAMIUM.get());
 
@@ -68,6 +67,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.OBAMIUM_CHESTPLATE);
         trimmedArmorItem(ModItems.OBAMIUM_LEGGINGS);
         trimmedArmorItem(ModItems.OBAMIUM_BOOTS);
+
+        trimmedArmorItem(ModItems.RED_MAGIC_HELMET);
+        trimmedArmorItem(ModItems.RED_MAGIC_CHESTPLATE);
+        trimmedArmorItem(ModItems.RED_MAGIC_LEGGINGS);
+        trimmedArmorItem(ModItems.RED_MAGIC_BOOTS);
+
+        basicItem(ModItems.RED_MAGIC.get());
+        basicItem(ModItems.RAW_RED_MAGIC.get());
     }
     private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {
         final String MOD_ID = JavaFinal.MOD_ID; // Change this to your mod id

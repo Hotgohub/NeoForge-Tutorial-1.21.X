@@ -25,6 +25,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.OBAMIUM_ORE);
         blockWithItem(ModBlocks.OBAMIUM_DEEPSLATE_ORE);
 
+        blockWithItem(ModBlocks.RED_MAGIC_ORE);
+
         blockWithItem(ModBlocks.MAGIC_BLOCK);
 
         stairsBlock(ModBlocks.OBAMIUM_STAIRS.get(), blockTexture(ModBlocks.OBAMIUM_BLOCK.get()));

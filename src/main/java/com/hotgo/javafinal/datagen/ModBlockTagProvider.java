@@ -23,7 +23,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.OBAMIUM_BLOCK.get())
                 .add(ModBlocks.OBAMIUM_ORE.get())
                 .add(ModBlocks.RED_LAMP.get())
-                .add(ModBlocks.OBAMIUM_DEEPSLATE_ORE.get());
+                .add(ModBlocks.OBAMIUM_DEEPSLATE_ORE.get())
+                .add(ModBlocks.RED_MAGIC_ORE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.OBAMIUM_DEEPSLATE_ORE.get());

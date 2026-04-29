@@ -34,6 +34,12 @@ public class ModItems {
                 }
             });
 
+    public static final DeferredItem<Item> RED_MAGIC = ITEMS.register("red_magic",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> RAW_RED_MAGIC = ITEMS.register("raw_red_magic",
+            () -> new Item(new Item.Properties()));
+
     //Custom Items
     public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties()
@@ -92,6 +98,7 @@ public class ModItems {
             () -> new HammerItem(ModToolTiers.OBAMIUM, new Item.Properties()
                     .attributes(HammerItem.createAttributes(ModToolTiers.OBAMIUM, 7f, -3.5f))));
 
+
     public static final DeferredItem<ArmorItem> OBAMIUM_HELMET = ITEMS.register("obamium_helmet",
             () -> new ArmorItem(ModArmorMaterials.OBAMIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
@@ -106,6 +113,23 @@ public class ModItems {
 
     public static final DeferredItem<ArmorItem> OBAMIUM_BOOTS = ITEMS.register("obamium_boots",
             () -> new ArmorItem(ModArmorMaterials.OBAMIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
+
+
+    public static final DeferredItem<ArmorItem> RED_MAGIC_HELMET = ITEMS.register("red_magic_helmet",
+            () -> new ArmorItem(ModArmorMaterials.RED_MAGIC_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
+
+    public static final DeferredItem<ArmorItem> RED_MAGIC_CHESTPLATE = ITEMS.register("red_magic_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.RED_MAGIC_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+
+    public static final DeferredItem<ArmorItem> RED_MAGIC_LEGGINGS = ITEMS.register("red_magic_leggings",
+            () -> new ArmorItem(ModArmorMaterials.RED_MAGIC_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+
+    public static final DeferredItem<ArmorItem> RED_MAGIC_BOOTS = ITEMS.register("red_magic_boots",
+            () -> new ArmorItem(ModArmorMaterials.RED_MAGIC_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
 
 

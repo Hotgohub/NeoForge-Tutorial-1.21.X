@@ -108,6 +108,13 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(RedLampBlock.CLICKED) ? 15 : 0)));
 
+    public static final DeferredBlock<Block> RED_MAGIC_ORE = registerBlock("red_magic_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4),
+                    BlockBehaviour.Properties.of()
+                            .strength(4f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.AMETHYST)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

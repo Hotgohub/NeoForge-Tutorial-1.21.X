@@ -44,7 +44,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.OBAMIUM_HELMET.get())
                 .add(ModItems.OBAMIUM_CHESTPLATE.get())
                 .add(ModItems.OBAMIUM_LEGGINGS.get())
-                .add(ModItems.OBAMIUM_BOOTS.get());
+                .add(ModItems.OBAMIUM_BOOTS.get())
+                .add(ModItems.RED_MAGIC_HELMET.get())
+                .add(ModItems.RED_MAGIC_CHESTPLATE.get())
+                .add(ModItems.RED_MAGIC_LEGGINGS.get())
+                .add(ModItems.RED_MAGIC_BOOTS.get());
 
     }
 }

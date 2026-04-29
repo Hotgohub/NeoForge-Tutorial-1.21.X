@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
@@ -23,6 +24,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(RecipeOutput recipeOutput) {
         List<ItemLike> OBAMIUM_SMELTABLES = List.of(ModItems.RAW_OBAMIUM,
                 ModBlocks.OBAMIUM_ORE, ModBlocks.OBAMIUM_DEEPSLATE_ORE);
+        List<ItemLike> RED_MAGIC_SMELTABLES = List.of(ModItems.RAW_RED_MAGIC,
+                ModBlocks.RED_MAGIC_ORE);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.OBAMIUM_BLOCK.get())
                 .pattern("OOO")
@@ -30,6 +33,73 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("OOO")
                 .define('O', ModItems.OBAMIUM.get())
                 .unlockedBy("has_obamium", has(ModItems.OBAMIUM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.RED_LAMP.get())
+                .pattern(" G ")
+                .pattern("GRG")
+                .pattern(" G ")
+                .define('R', ModItems.RED_MAGIC.get())
+                .define('G', Items.GLASS)
+                .unlockedBy("has_red_magic", has(ModItems.RED_MAGIC)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.OBAMIUM_SWORD.get())
+                .pattern(" O ")
+                .pattern(" O ")
+                .pattern(" S ")
+                .define('O', ModItems.OBAMIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_obamium", has(ModItems.OBAMIUM)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.OBAMIUM_PICKAXE.get())
+                .pattern("OOO")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('O', ModItems.OBAMIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_obamium", has(ModItems.OBAMIUM)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.OBAMIUM_AXE.get())
+                .pattern(" OO")
+                .pattern(" SO")
+                .pattern(" S ")
+                .define('O', ModItems.OBAMIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_obamium", has(ModItems.OBAMIUM)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.OBAMIUM_SHOVEL.get())
+                .pattern(" O ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('O', ModItems.OBAMIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_obamium", has(ModItems.OBAMIUM)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.OBAMIUM_HOE.get())
+                .pattern(" OO")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('O', ModItems.OBAMIUM.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_obamium", has(ModItems.OBAMIUM)).save(recipeOutput);
+
+       ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RED_MAGIC_HELMET.get())
+               .pattern("RRR")
+               .pattern("R R")
+               .define('R', ModItems.RED_MAGIC.get())
+               .unlockedBy("has_red_magic", has(ModItems.RED_MAGIC)).save(recipeOutput);
+       ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RED_MAGIC_CHESTPLATE.get())
+               .pattern("R R")
+               .pattern("RRR")
+               .pattern("RRR")
+               .define('R', ModItems.RED_MAGIC.get())
+               .unlockedBy("has_red_magic", has(ModItems.RED_MAGIC)).save(recipeOutput);
+       ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RED_MAGIC_LEGGINGS.get())
+               .pattern("RRR")
+               .pattern("R R")
+               .pattern("R R")
+               .define('R', ModItems.RED_MAGIC.get())
+               .unlockedBy("has_red_magic", has(ModItems.RED_MAGIC)).save(recipeOutput);
+       ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RED_MAGIC_BOOTS.get())
+               .pattern("R R")
+               .pattern("R R")
+               .define('R', ModItems.RED_MAGIC.get())
+               .unlockedBy("has_red_magic", has(ModItems.RED_MAGIC)).save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.OBAMIUM.get(), 9)
                 .requires(ModBlocks.OBAMIUM_BLOCK)
@@ -42,6 +112,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(recipeOutput, OBAMIUM_SMELTABLES, RecipeCategory.MISC, ModItems.OBAMIUM.get(), 0.25f, 200, "obamium");
         oreBlasting(recipeOutput, OBAMIUM_SMELTABLES, RecipeCategory.MISC, ModItems.OBAMIUM.get(), 0.25f, 100, "obamium");
+
+        oreSmelting(recipeOutput, RED_MAGIC_SMELTABLES, RecipeCategory.MISC, ModItems.RED_MAGIC.get(), 0.25f, 200, "red_magic");
+        oreBlasting(recipeOutput, RED_MAGIC_SMELTABLES, RecipeCategory.MISC, ModItems.RED_MAGIC.get(), 0.25f, 100, "red_magic");
 
         stairBuilder(ModBlocks.OBAMIUM_STAIRS.get(), Ingredient.of(ModItems.OBAMIUM)).group("obamium")
                 .unlockedBy("has_obamium", has(ModItems.OBAMIUM)).save(recipeOutput);

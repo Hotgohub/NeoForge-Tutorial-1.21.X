@@ -20,12 +20,21 @@
   "item.javafinal.obamium_axe": "Obamium Axe",
   "item.javafinal.obamium_hoe": "Obamium Hoe",
 
+  "item.javafinal.red_magic": "Red Magic",
+  "item.javafinal.raw_red_magic": "Raw Red Magic",
+  "block.javafinal.red_magic_ore": "Red Magic Ore",
+
   "item.javafinal.obamium_hammer": "Obamium Hammer",
 
   "item.javafinal.obamium_helmet": "Obamium Helmet",
   "item.javafinal.obamium_chestplate": "Obamium Chestplate",
   "item.javafinal.obamium_leggings": "Obamium Leggings",
   "item.javafinal.obamium_boots": "Obamium Boots",
+
+  "item.javafinal.red_magic_helmet": "Red Magic Helmet",
+  "item.javafinal.red_magic_chestplate": "Red Magic Chestplate",
+  "item.javafinal.red_magic_leggings": "Red Magic Leggings",
+  "item.javafinal.red_magic_boots": "Red Magic Boots",
 
   "block.javafinal.obamium_block": "Block of Obamium",
   "tooltip.javafinal.obamium_block.tooltip": "A condensed, purer form of that ore you found.",

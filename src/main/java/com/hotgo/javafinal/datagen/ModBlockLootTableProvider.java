@@ -35,6 +35,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.OBAMIUM_ORE.get(), ModItems.RAW_OBAMIUM.get()));
         add(ModBlocks.OBAMIUM_DEEPSLATE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.OBAMIUM_DEEPSLATE_ORE.get(), ModItems.RAW_OBAMIUM.get(), 2, 5));
+        add(ModBlocks.RED_MAGIC_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.RED_MAGIC_ORE.get(), ModItems.RAW_RED_MAGIC.get(), 2, 5));
 
         dropSelf(ModBlocks.OBAMIUM_STAIRS.get());
         add(ModBlocks.OBAMIUM_SLAB.get(),

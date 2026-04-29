@@ -4,6 +4,7 @@ import com.hotgo.javafinal.JavaFinal;
 import com.hotgo.javafinal.item.custom.ChiselItem;
 import com.hotgo.javafinal.item.custom.FuelItem;
 import com.hotgo.javafinal.item.custom.HammerItem;
+import com.hotgo.javafinal.item.custom.ModArmorItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -117,7 +118,7 @@ public class ModItems {
 
 
     public static final DeferredItem<ArmorItem> RED_MAGIC_HELMET = ITEMS.register("red_magic_helmet",
-            () -> new ArmorItem(ModArmorMaterials.RED_MAGIC_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.RED_MAGIC_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
 
     public static final DeferredItem<ArmorItem> RED_MAGIC_CHESTPLATE = ITEMS.register("red_magic_chestplate",

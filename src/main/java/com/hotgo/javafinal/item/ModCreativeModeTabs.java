@@ -50,6 +50,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RED_MAGIC_LEGGINGS);
                         output.accept(ModItems.RED_MAGIC_BOOTS);
 
+                        output.accept(ModItems.RED_MAGIC_HORSE_ARMOR);
+
 
                     }).build());
 

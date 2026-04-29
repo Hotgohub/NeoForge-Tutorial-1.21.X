@@ -133,6 +133,10 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.RED_MAGIC_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
 
+    public static final DeferredItem<Item> RED_MAGIC_HORSE_ARMOR = ITEMS.register("red_magic_horse_armor",
+            () -> new AnimalArmorItem(ModArmorMaterials.RED_MAGIC_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
+                    false, new Item.Properties().stacksTo(1)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

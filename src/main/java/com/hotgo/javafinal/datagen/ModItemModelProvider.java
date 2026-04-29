@@ -75,6 +75,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.RED_MAGIC.get());
         basicItem(ModItems.RAW_RED_MAGIC.get());
+
+        basicItem(ModItems.RED_MAGIC_HORSE_ARMOR.get());
     }
     private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {
         final String MOD_ID = JavaFinal.MOD_ID; // Change this to your mod id

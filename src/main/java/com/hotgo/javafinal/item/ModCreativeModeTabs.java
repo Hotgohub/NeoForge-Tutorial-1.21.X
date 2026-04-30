@@ -52,6 +52,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.RED_MAGIC_HORSE_ARMOR);
 
+                        output.accept(ModItems.HOTGO_SMITHING_TEMPLATE);
+
 
                     }).build());
 

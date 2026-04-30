@@ -6,6 +6,7 @@ import com.hotgo.javafinal.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
@@ -134,6 +135,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_obamium", has(ModItems.OBAMIUM.get())).save(recipeOutput);
         trapdoorBuilder(ModBlocks.OBAMIUM_TRAPDOOR.get(), Ingredient.of(ModItems.OBAMIUM.get())).group("obamium")
                 .unlockedBy("has_obamium", has(ModItems.OBAMIUM.get())).save(recipeOutput);
+
+        trimSmithing(recipeOutput, ModItems.HOTGO_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "hotgo"));
 
     }
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

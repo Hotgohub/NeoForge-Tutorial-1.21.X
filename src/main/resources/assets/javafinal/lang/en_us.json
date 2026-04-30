@@ -33,6 +33,8 @@
 
   "item.javafinal.red_magic_horse_armor": "Red Magic Horse Armor",
 
+  "item.javafinal.hotgo_armor_trim_smithing_template": "Hotgo Trim Template",
+
   "item.javafinal.red_magic_helmet": "Red Magic Helmet",
   "item.javafinal.red_magic_chestplate": "Red Magic Chestplate",
   "item.javafinal.red_magic_leggings": "Red Magic Leggings",
@@ -59,9 +61,8 @@
   "tooltip.javafinal.magic_block.tooltip": "A magical block that can make your §lwildest§r dreams come true.",
 
   "creativetab.javafinal.obama_items": "Obama Items",
-  "creativetab.javafinal.obama_blocks": "Obama Blocks"
+  "creativetab.javafinal.obama_blocks": "Obama Blocks",
 
-
-
-
+  "trim_pattern.javafinal.hotgo": "Hotgo Armor Trim",
+  "trim_material.javafinal.red_magic": "Red Magic Material"
 }

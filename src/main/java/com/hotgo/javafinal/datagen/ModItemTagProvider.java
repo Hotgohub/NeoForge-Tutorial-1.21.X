@@ -50,5 +50,12 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.RED_MAGIC_LEGGINGS.get())
                 .add(ModItems.RED_MAGIC_BOOTS.get());
 
+        this.tag(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.RED_MAGIC.get());
+
+
+        this.tag(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.HOTGO_SMITHING_TEMPLATE.get());
+
     }
 }

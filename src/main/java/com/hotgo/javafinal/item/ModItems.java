@@ -6,6 +6,7 @@ import com.hotgo.javafinal.item.custom.FuelItem;
 import com.hotgo.javafinal.item.custom.HammerItem;
 import com.hotgo.javafinal.item.custom.ModArmorItem;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -136,6 +137,9 @@ public class ModItems {
     public static final DeferredItem<Item> RED_MAGIC_HORSE_ARMOR = ITEMS.register("red_magic_horse_armor",
             () -> new AnimalArmorItem(ModArmorMaterials.RED_MAGIC_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
                     false, new Item.Properties().stacksTo(1)));
+
+    public static final DeferredItem<Item> HOTGO_SMITHING_TEMPLATE = ITEMS.register("hotgo_armor_trim_smithing_template",
+            () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "hotgo")));
 
 
     public static void register(IEventBus eventBus) {

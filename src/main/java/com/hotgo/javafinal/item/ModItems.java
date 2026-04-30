@@ -141,6 +141,9 @@ public class ModItems {
     public static final DeferredItem<Item> HOTGO_SMITHING_TEMPLATE = ITEMS.register("hotgo_armor_trim_smithing_template",
             () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "hotgo")));
 
+    public static final DeferredItem<Item> RED_MAGIC_BOW = ITEMS.register("red_magic_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -54,6 +54,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.HOTGO_SMITHING_TEMPLATE);
 
+                        output.accept(ModItems.RED_MAGIC_BOW);
+
 
                     }).build());
 

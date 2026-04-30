@@ -79,6 +79,39 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RED_MAGIC_HORSE_ARMOR.get());
 
         basicItem(ModItems.HOTGO_SMITHING_TEMPLATE.get());
+
+        bowItem(ModItems.RED_MAGIC_BOW);
+    }
+    // Add this method to ModItemModelProvider
+    //My own creation :evil:
+    private void bowItem(DeferredItem<?> item) {
+        String name = item.getId().getPath();
+
+        // Create the 3 pulling sub-models
+        withExistingParent(name + "_pulling_0", mcLoc("item/bow_pulling_0"))
+                .texture("layer0", ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "item/" + name + "_pulling_0"));
+        withExistingParent(name + "_pulling_1", mcLoc("item/bow_pulling_1"))
+                .texture("layer0", ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "item/" + name + "_pulling_1"));
+        withExistingParent(name + "_pulling_2", mcLoc("item/bow_pulling_2"))
+                .texture("layer0", ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "item/" + name + "_pulling_2"));
+
+        // Base model with pull overrides
+        withExistingParent(name, mcLoc("item/bow"))
+                .texture("layer0", ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "item/" + name))
+                .override()
+                    .predicate(mcLoc("pulling"), 1)
+                    .model(new ModelFile.UncheckedModelFile(JavaFinal.MOD_ID + ":item/" + name + "_pulling_0"))
+                    .end()
+                .override()
+                    .predicate(mcLoc("pulling"), 1)
+                    .predicate(mcLoc("pull"), 0.65f)
+                    .model(new ModelFile.UncheckedModelFile(JavaFinal.MOD_ID + ":item/" + name + "_pulling_1"))
+                    .end()
+                .override()
+                    .predicate(mcLoc("pulling"), 1)
+                    .predicate(mcLoc("pull"), 0.9f)
+                    .model(new ModelFile.UncheckedModelFile(JavaFinal.MOD_ID + ":item/" + name + "_pulling_2"))
+                    .end();
     }
     private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {
         final String MOD_ID = JavaFinal.MOD_ID; // Change this to your mod id

@@ -45,7 +45,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.OBAMIUM.get());
         basicItem(ModItems.RAW_OBAMIUM.get());
 
-        basicItem(ModItems.CHISEL.get());
+        //basicItem(ModItems.CHISEL.get());
         basicItem(ModItems.ORANGE_JUICE.get());
         basicItem(ModItems.FIRE_PNG.get());
         basicItem(ModItems.THE_WHITE_HOUSE.get());

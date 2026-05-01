@@ -4,11 +4,18 @@ package com.hotgo.javafinal.event;
 import com.hotgo.javafinal.JavaFinal;
 import com.hotgo.javafinal.item.custom.HammerItem;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.RegisterGuiLayersEvent;
+import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
 
 import java.util.HashSet;
@@ -39,5 +46,17 @@ public class ModEvents {
                 HARVESTED_BLOCKS.remove(pos);
             }
         }
+    }
+
+    @SubscribeEvent
+    public static void livingDamage(LivingDamageEvent.Pre event) {
+        if(event.getEntity() instanceof Sheep sheep && event.getSource().getDirectEntity() instanceof Player player) {
+            if(player.getMainHandItem().getItem() == Items.GRASS_BLOCK) {
+                player.sendSystemMessage(Component.literal("he hungry"));
+                sheep.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 600, 6));
+                player.getMainHandItem().shrink(1);
+            }
+        }
+
     }
 }

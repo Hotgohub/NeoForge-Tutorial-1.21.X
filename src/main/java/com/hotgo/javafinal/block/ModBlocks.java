@@ -4,6 +4,7 @@ import com.hotgo.javafinal.JavaFinal;
 import com.hotgo.javafinal.block.custom.MagicBlock;
 import com.hotgo.javafinal.block.custom.RedLampBlock;
 import com.hotgo.javafinal.item.ModItems;
+import com.hotgo.javafinal.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -55,7 +56,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of()
                     .strength(2f)
-                    .noLootTable()));
+                    .noLootTable()
+                    .sound(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     public static final DeferredBlock<StairBlock> OBAMIUM_STAIRS = registerBlock("obamium_stairs",
             () -> new StairBlock(ModBlocks.OBAMIUM_BLOCK.get().defaultBlockState(),

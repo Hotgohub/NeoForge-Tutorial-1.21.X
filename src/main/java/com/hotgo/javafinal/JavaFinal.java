@@ -4,6 +4,7 @@ import com.hotgo.javafinal.block.ModBlocks;
 import com.hotgo.javafinal.component.ModDataComponents;
 import com.hotgo.javafinal.item.ModCreativeModeTabs;
 import com.hotgo.javafinal.item.ModItems;
+import com.hotgo.javafinal.sound.ModSounds;
 import com.hotgo.javafinal.util.ModItemProperties;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -46,6 +47,7 @@ public class JavaFinal {
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
 

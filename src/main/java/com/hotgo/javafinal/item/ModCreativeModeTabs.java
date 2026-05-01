@@ -56,6 +56,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.RED_MAGIC_BOW);
 
+                        output.accept(ModItems.BAR_BRAWL_MUSIC_DISC);
+
 
                     }).build());
 

@@ -81,6 +81,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.HOTGO_SMITHING_TEMPLATE.get());
 
         bowItem(ModItems.RED_MAGIC_BOW);
+
+        basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
     }
     // Add this method to ModItemModelProvider
     //My own creation :evil:

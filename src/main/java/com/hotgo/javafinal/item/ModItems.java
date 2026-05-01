@@ -5,6 +5,7 @@ import com.hotgo.javafinal.item.custom.ChiselItem;
 import com.hotgo.javafinal.item.custom.FuelItem;
 import com.hotgo.javafinal.item.custom.HammerItem;
 import com.hotgo.javafinal.item.custom.ModArmorItem;
+import com.hotgo.javafinal.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
@@ -143,6 +144,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> RED_MAGIC_BOW = ITEMS.register("red_magic_bow",
             () -> new BowItem(new Item.Properties().durability(500)));
+
+    public static final DeferredItem<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {

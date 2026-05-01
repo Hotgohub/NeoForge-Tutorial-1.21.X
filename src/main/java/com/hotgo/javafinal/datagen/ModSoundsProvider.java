@@ -15,23 +15,29 @@ public class ModSoundsProvider extends SoundDefinitionsProvider {
         super(output, JavaFinal.MOD_ID, existingFileHelper);
     }
 
-    private void registerSound(Supplier<SoundEvent> soundEvent, String soundFile, float volume, float pitch) {
-        add(soundEvent, SoundDefinition.definition()
-                .with(sound("javafinal:" + soundFile)
-                        .volume(volume)
-                        .pitch(pitch))
-                .subtitle("sound.javafinal" + soundFile)
-        );
-    }
+
 
     @Override
     public void registerSounds() {
-        registerSound(ModSounds.CHISEL_USE, "chisel_use", 1f, 1f);
+        registerSound(ModSounds.CHISEL_USE, 1f, 1f, false);
 
-        registerSound(ModSounds.MAGIC_BLOCK_BREAK, "magic_block_break", 1f, 1f);
-        registerSound(ModSounds.MAGIC_BLOCK_FALL, "magic_block_fall", 1f, 1f);
-        registerSound(ModSounds.MAGIC_BLOCK_HIT, "magic_block_hit", 1f, 1f);
-        registerSound(ModSounds.MAGIC_BLOCK_PLACE, "magic_block_place", 1f, 1f);
-        registerSound(ModSounds.MAGIC_BLOCK_STEP, "magic_block_step", 1f, 1f);
+        registerSound(ModSounds.MAGIC_BLOCK_BREAK, 1f, 1f, false);
+        registerSound(ModSounds.MAGIC_BLOCK_FALL, 1f, 1f, false);
+        registerSound(ModSounds.MAGIC_BLOCK_HIT, 1f, 1f, false);
+        registerSound(ModSounds.MAGIC_BLOCK_PLACE, 1f, 1f, false);
+        registerSound(ModSounds.MAGIC_BLOCK_STEP, 1f, 1f, false);
+
+        registerSound(ModSounds.BAR_BRAWL, 1f, 1f, true);
+    }
+
+    private void registerSound(Supplier<SoundEvent> soundEvent, float volume, float pitch, boolean stream) {
+        String soundName = soundEvent.get().getLocation().getPath();
+        add(soundEvent, SoundDefinition.definition()
+                .with(sound("javafinal:" + soundName)
+                        .volume(volume)
+                        .pitch(pitch)
+                        .stream(stream))
+                .subtitle("sounds.javafinal." + soundName)
+        );
     }
 }

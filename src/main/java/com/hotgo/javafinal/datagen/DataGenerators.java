@@ -43,6 +43,10 @@ public class DataGenerators {
 
         generator.addProvider(event.includeServer(), new ModSoundsProvider(packOutput, existingFileHelper));
 
+        ModPaintingProvider paintingProvider = new ModPaintingProvider(packOutput, lookupProvider);
+        generator.addProvider(event.includeServer(), paintingProvider);
+        generator.addProvider(event.includeServer(), new ModPaintingTagProvider(packOutput, paintingProvider.getRegistryProvider()));
+
 
     }
 

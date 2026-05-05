@@ -3,6 +3,7 @@ package com.hotgo.javafinal;
 import com.hotgo.javafinal.block.ModBlocks;
 import com.hotgo.javafinal.component.ModDataComponents;
 import com.hotgo.javafinal.effect.ModEffects;
+import com.hotgo.javafinal.enchantment.ModEnchantmentEffects;
 import com.hotgo.javafinal.item.ModCreativeModeTabs;
 import com.hotgo.javafinal.item.ModItems;
 import com.hotgo.javafinal.potion.ModPotions;
@@ -55,6 +56,9 @@ public class JavaFinal {
 
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
+
+
+        ModEnchantmentEffects.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 

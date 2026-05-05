@@ -2,8 +2,10 @@ package com.hotgo.javafinal;
 
 import com.hotgo.javafinal.block.ModBlocks;
 import com.hotgo.javafinal.component.ModDataComponents;
+import com.hotgo.javafinal.effect.ModEffects;
 import com.hotgo.javafinal.item.ModCreativeModeTabs;
 import com.hotgo.javafinal.item.ModItems;
+import com.hotgo.javafinal.potion.ModPotions;
 import com.hotgo.javafinal.sound.ModSounds;
 import com.hotgo.javafinal.util.ModItemProperties;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -51,6 +53,8 @@ public class JavaFinal {
 
         ModDataComponents.register(modEventBus);
 
+        ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 

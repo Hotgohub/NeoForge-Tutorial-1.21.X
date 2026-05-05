@@ -69,5 +69,10 @@
   "creativetab.javafinal.obama_blocks": "Obama Blocks",
 
   "trim_pattern.javafinal.hotgo": "Hotgo Armor Trim",
-  "trim_material.javafinal.red_magic": "Red Magic Material"
+  "trim_material.javafinal.red_magic": "Red Magic Material",
+  "effect.javafinal.slimey": "Slimey",
+
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion"
 }

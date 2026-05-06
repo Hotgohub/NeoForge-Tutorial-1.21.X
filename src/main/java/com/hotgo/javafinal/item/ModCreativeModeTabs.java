@@ -59,6 +59,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BAR_BRAWL_MUSIC_DISC);
 
                         output.accept(ModItems.TOMATO_SEEDS);
+                        output.accept(ModItems.TOMATO);
+
+                        output.accept(ModItems.GOJI_BERRIES);
 
 
                     }).build());

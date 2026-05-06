@@ -1,6 +1,7 @@
 package com.hotgo.javafinal.block;
 
 import com.hotgo.javafinal.JavaFinal;
+import com.hotgo.javafinal.block.custom.GojiBerryBushBlock;
 import com.hotgo.javafinal.block.custom.MagicBlock;
 import com.hotgo.javafinal.block.custom.RedLampBlock;
 import com.hotgo.javafinal.block.custom.TomatoCropBlock;
@@ -119,6 +120,9 @@ public class ModBlocks {
                             .sound(SoundType.AMETHYST)));
     public static final DeferredBlock<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
             () -> new TomatoCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PITCHER_CROP)));
+
+    public static final DeferredBlock<Block> GOJI_BERRY_BUSH = BLOCKS.register("goji_berry_bush",
+            () -> new GojiBerryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

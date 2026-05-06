@@ -86,5 +86,7 @@
   "enchantment.javafinal.lightning_striker": "Lightning Striker",
 
   "item.javafinal.tomato_seeds": "Tomato Seeds",
-  "block.javafinal.tomato_crop": "Tomato Crop"
+  "block.javafinal.tomato_crop": "Tomato Crop",
+  "item.javafinal.goji_berries": "Goji Berries",
+  "block.javafinal.goji_berry_bush": "Goji Berry Bush"
 }

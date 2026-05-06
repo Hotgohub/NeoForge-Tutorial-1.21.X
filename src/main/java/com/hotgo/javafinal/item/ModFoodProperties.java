@@ -17,4 +17,10 @@ public class ModFoodProperties {
             .saturationModifier(0.25f)
 
             .build();
+
+    public static final FoodProperties GOJI_BERRY = new FoodProperties.Builder()
+            .nutrition(2)
+            .saturationModifier(0.15f)
+            .fast()
+            .build();
 }

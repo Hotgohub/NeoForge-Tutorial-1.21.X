@@ -19,7 +19,8 @@ public class ModPaintingTagProvider extends TagsProvider<PaintingVariant> {
     protected void addTags(HolderLookup.Provider provider) {
         tag(PaintingVariantTags.PLACEABLE)
                 .add(ModPaintingProvider.POCHITA)
-                .add(ModPaintingProvider.ME);
+                .add(ModPaintingProvider.ME)
+                .add(ModPaintingProvider.WEIRD_BUGGER);
     }
 
     @Override

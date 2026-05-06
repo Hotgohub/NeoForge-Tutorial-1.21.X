@@ -25,6 +25,9 @@
   "item.javafinal.red_magic": "Red Magic",
   "item.javafinal.raw_red_magic": "Raw Red Magic",
   "block.javafinal.red_magic_ore": "Red Magic Ore",
+  "block.javafinal.red_magic_deepslate_ore": "Deepslate Red Magic Ore",
+  "block.javafinal.red_magic_nether_ore": "Nether Red Magic Ore",
+  "block.javafinal.red_magic_end_ore": "End Red Magic Ore",
 
   "item.javafinal.obamium_hammer": "Obamium Hammer",
 
@@ -51,6 +54,8 @@
   "tooltip.javafinal.obamium_block.tooltip": "A condensed, purer form of that ore you found.",
   "block.javafinal.obamium_ore": "Obamium Ore",
   "block.javafinal.obamium_deepslate_ore": "Deepslate Obamium Ore",
+  "block.javafinal.obamium_nether_ore": "Nether Obamium Ore",
+  "block.javafinal.obamium_end_ore": "End Obamium Ore",
 
   "block.javafinal.obamium_stairs": "Obamium Stairs",
   "block.javafinal.obamium_slab": "Obamium Slab",
@@ -82,6 +87,8 @@
   "painting.javafinal.pochita.author": "Tatsuki Fujimoto",
   "painting.javafinal.me.title": "Jonah",
   "painting.javafinal.me.author": "My Phone",
+  "painting.javafinal.weird_bugger.title": "Weird Bugger",
+  "painting.javafinal.weird_bugger.author": "idk",
 
   "enchantment.javafinal.lightning_striker": "Lightning Striker",
 

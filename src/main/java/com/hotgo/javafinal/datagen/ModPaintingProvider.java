@@ -26,6 +26,7 @@ public class ModPaintingProvider extends DatapackBuiltinEntriesProvider {
     private static void bootstrap(BootstrapContext<PaintingVariant> context) {
         register(context, "pochita", 4, 4);
         register(context, "me", 2, 2);
+        register(context, "weird_bugger", 2, 2);
     }
 
     private static void register(BootstrapContext<PaintingVariant> context, String name, int width, int height) {
@@ -44,4 +45,7 @@ public class ModPaintingProvider extends DatapackBuiltinEntriesProvider {
 
     public static final ResourceKey<PaintingVariant> ME = ResourceKey.create(
             Registries.PAINTING_VARIANT, ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "me"));
+
+    public static final ResourceKey<PaintingVariant> WEIRD_BUGGER = ResourceKey.create(
+            Registries.PAINTING_VARIANT, ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "weird_bugger"));
 }

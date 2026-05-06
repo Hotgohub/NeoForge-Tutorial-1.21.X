@@ -94,6 +94,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RED_LAMP);
 
                         output.accept(ModBlocks.RED_MAGIC_ORE);
+                        output.accept(ModBlocks.RED_MAGIC_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.RED_MAGIC_NETHER_ORE);
+                        output.accept(ModBlocks.RED_MAGIC_END_ORE);
 
 
 

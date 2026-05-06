@@ -55,6 +55,50 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.WET_SPONGE)));
 
+    //public static final DeferredBlock<Block> OBAMIUM_END_ORE= registerBlock("obamium_end_ore",
+    //        () -> new DropExperienceBlock(UniformInt.of(5, 9),
+    //                BlockBehaviour.Properties.of()
+    //                        .strength(4f)
+    //                        .requiresCorrectToolForDrops()
+    //                        .sound(SoundType.WET_SPONGE)));
+
+    //public static final DeferredBlock<Block> OBAMIUM_NETHER_ORE = registerBlock("obamium_nether_ore",
+    //        () -> new DropExperienceBlock(UniformInt.of(1, 5),
+    //                BlockBehaviour.Properties.of()
+    //                        .strength(4f)
+    //                        .requiresCorrectToolForDrops()
+    //                        .sound(SoundType.WET_SPONGE)));
+
+
+    public static final DeferredBlock<Block> RED_MAGIC_ORE = registerBlock("red_magic_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4),
+                    BlockBehaviour.Properties.of()
+                            .strength(4f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> RED_MAGIC_DEEPSLATE_ORE = registerBlock("red_magic_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 6),
+                    BlockBehaviour.Properties.of()
+                            .strength(4f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> RED_MAGIC_END_ORE = registerBlock("red_magic_end_ore",
+            () -> new DropExperienceBlock(UniformInt.of(5, 9),
+                    BlockBehaviour.Properties.of()
+                            .strength(4f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> RED_MAGIC_NETHER_ORE = registerBlock("red_magic_nether_ore",
+            () -> new DropExperienceBlock(UniformInt.of(1, 5),
+                    BlockBehaviour.Properties.of()
+                            .strength(4f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.AMETHYST)));
+
+
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of()
                     .strength(2f)
@@ -112,12 +156,6 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(RedLampBlock.CLICKED) ? 15 : 0)));
 
-    public static final DeferredBlock<Block> RED_MAGIC_ORE = registerBlock("red_magic_ore",
-            () -> new DropExperienceBlock(UniformInt.of(2, 4),
-                    BlockBehaviour.Properties.of()
-                            .strength(4f)
-                            .requiresCorrectToolForDrops()
-                            .sound(SoundType.AMETHYST)));
     public static final DeferredBlock<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
             () -> new TomatoCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PITCHER_CROP)));
 

@@ -43,8 +43,19 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.OBAMIUM_ORE.get(), ModItems.RAW_OBAMIUM.get()));
         add(ModBlocks.OBAMIUM_DEEPSLATE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.OBAMIUM_DEEPSLATE_ORE.get(), ModItems.RAW_OBAMIUM.get(), 2, 5));
+        //add(ModBlocks.OBAMIUM_NETHER_ORE.get(),
+        //        block -> createMultipleOreDrops(ModBlocks.OBAMIUM_NETHER_ORE.get(), ModItems.RAW_OBAMIUM.get(), 4, 8));
+        //add(ModBlocks.OBAMIUM_END_ORE.get(),
+        //        block -> createMultipleOreDrops(ModBlocks.OBAMIUM_END_ORE.get(), ModItems.RAW_OBAMIUM.get(), 3, 6));
+
         add(ModBlocks.RED_MAGIC_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.RED_MAGIC_ORE.get(), ModItems.RAW_RED_MAGIC.get(), 2, 5));
+        add(ModBlocks.RED_MAGIC_DEEPSLATE_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.RED_MAGIC_DEEPSLATE_ORE.get(), ModItems.RAW_RED_MAGIC.get(), 2, 5));
+        add(ModBlocks.RED_MAGIC_NETHER_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.RED_MAGIC_NETHER_ORE.get(), ModItems.RAW_RED_MAGIC.get(), 4, 8));
+        add(ModBlocks.RED_MAGIC_END_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.RED_MAGIC_END_ORE.get(), ModItems.RAW_RED_MAGIC.get(), 3, 6));
 
         dropSelf(ModBlocks.OBAMIUM_STAIRS.get());
         add(ModBlocks.OBAMIUM_SLAB.get(),

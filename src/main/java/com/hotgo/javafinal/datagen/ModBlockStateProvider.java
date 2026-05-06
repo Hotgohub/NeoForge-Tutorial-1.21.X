@@ -32,8 +32,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.OBAMIUM_ORE);
         blockWithItem(ModBlocks.OBAMIUM_DEEPSLATE_ORE);
+        //blockWithItem(ModBlocks.OBAMIUM_NETHER_ORE);
+        //blockWithItem(ModBlocks.OBAMIUM_END_ORE);
 
         blockWithItem(ModBlocks.RED_MAGIC_ORE);
+        blockWithItem(ModBlocks.RED_MAGIC_DEEPSLATE_ORE);
+        blockWithItem(ModBlocks.RED_MAGIC_NETHER_ORE);
+        blockWithItem(ModBlocks.RED_MAGIC_END_ORE);
 
         blockWithItem(ModBlocks.MAGIC_BLOCK);
 

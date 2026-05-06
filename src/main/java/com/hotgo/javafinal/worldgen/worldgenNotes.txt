@@ -1,0 +1,9 @@
+Basically the game looks at the configured features then sends it to the placed features to figure out how to place
+those features, it then goes to the biome modifiers which tells the game how to modify a specific biome or area
+to place those features.
+
+Configured features: What is the shape? What is the feature going to look like in the world?
+Placed features: How is this feature going to be placed inside the world? How many in one chunk?
+Biome modifiers: In what biomes will we place this placed feature?
+
+CF -> PF -> BM

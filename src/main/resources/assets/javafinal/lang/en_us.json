@@ -9,6 +9,8 @@
 
   "item.javafinal.orange_juice": "Orange Juice",
   "tooltip.javafinal.orange_juice.tooltip": "Drink this to feel refreshed!",
+  "item.javafinal.tomato": "Tomato",
+  "tooltip.javafinal.tomato.tooltip": "Juicy and Sweet!",
   "item.javafinal.fire_png": "Fire.png",
   "tooltip.javafinal.fire_png.tooltip": "§kPlease help. It hurts.§r",
   "item.javafinal.the_white_house": "The White House",
@@ -81,5 +83,8 @@
   "painting.javafinal.me.title": "Jonah",
   "painting.javafinal.me.author": "My Phone",
 
-  "enchantment.javafinal.lightning_striker": "Lightning Striker"
+  "enchantment.javafinal.lightning_striker": "Lightning Striker",
+
+  "item.javafinal.tomato_seeds": "Tomato Seeds",
+  "block.javafinal.tomato_crop": "Tomato Crop"
 }

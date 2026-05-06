@@ -11,4 +11,10 @@ public class ModFoodProperties {
             .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 400), 0.75f)
 
             .build();
+
+    public static final FoodProperties TOMATO = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(0.25f)
+
+            .build();
 }

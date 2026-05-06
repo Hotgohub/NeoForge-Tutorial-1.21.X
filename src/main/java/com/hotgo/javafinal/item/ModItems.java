@@ -1,6 +1,7 @@
 package com.hotgo.javafinal.item;
 
 import com.hotgo.javafinal.JavaFinal;
+import com.hotgo.javafinal.block.ModBlocks;
 import com.hotgo.javafinal.item.custom.ChiselItem;
 import com.hotgo.javafinal.item.custom.FuelItem;
 import com.hotgo.javafinal.item.custom.HammerItem;
@@ -55,6 +56,14 @@ public class ModItems {
                 @Override
                 public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
                     tooltipComponents.add(Component.translatable("tooltip.javafinal.orange_juice.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+    public static final DeferredItem<Item> TOMATO = ITEMS.register("tomato",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.TOMATO)) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.javafinal.tomato.tooltip"));
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
@@ -147,6 +156,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

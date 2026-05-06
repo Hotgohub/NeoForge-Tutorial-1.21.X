@@ -3,6 +3,7 @@ package com.hotgo.javafinal.block;
 import com.hotgo.javafinal.JavaFinal;
 import com.hotgo.javafinal.block.custom.MagicBlock;
 import com.hotgo.javafinal.block.custom.RedLampBlock;
+import com.hotgo.javafinal.block.custom.TomatoCropBlock;
 import com.hotgo.javafinal.item.ModItems;
 import com.hotgo.javafinal.sound.ModSounds;
 import net.minecraft.network.chat.Component;
@@ -116,6 +117,8 @@ public class ModBlocks {
                             .strength(4f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
+            () -> new TomatoCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PITCHER_CROP)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -95,5 +95,13 @@
   "item.javafinal.tomato_seeds": "Tomato Seeds",
   "block.javafinal.tomato_crop": "Tomato Crop",
   "item.javafinal.goji_berries": "Goji Berries",
-  "block.javafinal.goji_berry_bush": "Goji Berry Bush"
+  "block.javafinal.goji_berry_bush": "Goji Berry Bush",
+
+  "block.javafinal.bloodwood_log": "Bloodwood Log",
+  "block.javafinal.bloodwood_planks": "Bloodwood Planks",
+  "block.javafinal.bloodwood_wood": "Bloodwood Wood",
+  "block.javafinal.stripped_bloodwood_log": "Stripped Bloodwood Log",
+  "block.javafinal.stripped_bloodwood_wood": "Stripped Bloodwood Wood",
+  "block.javafinal.bloodwood_leaves": "Bloodwood Leaves",
+  "block.javafinal.bloodwood_sapling": "Bloodwood Sapling"
 }

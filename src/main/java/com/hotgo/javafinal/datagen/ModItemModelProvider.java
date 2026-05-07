@@ -88,13 +88,19 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.TOMATO_SEEDS.get());
 
         basicItem(ModItems.GOJI_BERRIES.get());
+
+        saplingItem(ModBlocks.BLOODWOOD_SAPLING);
     }
-    // Add this method to ModItemModelProvider
+    private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "block/" + item.getId().getPath()));
+    }
+
     //My own creation :evil:
     private void bowItem(DeferredItem<?> item) {
         String name = item.getId().getPath();
 
-        // Create the 3 pulling sub-models
         withExistingParent(name + "_pulling_0", mcLoc("item/bow_pulling_0"))
                 .texture("layer0", ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "item/" + name + "_pulling_0"));
         withExistingParent(name + "_pulling_1", mcLoc("item/bow_pulling_1"))
@@ -102,7 +108,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(name + "_pulling_2", mcLoc("item/bow_pulling_2"))
                 .texture("layer0", ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "item/" + name + "_pulling_2"));
 
-        // Base model with pull overrides
         withExistingParent(name, mcLoc("item/bow"))
                 .texture("layer0", ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, "item/" + name))
                 .override()

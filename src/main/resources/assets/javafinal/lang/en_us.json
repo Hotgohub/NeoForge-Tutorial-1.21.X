@@ -103,5 +103,8 @@
   "block.javafinal.stripped_bloodwood_log": "Stripped Bloodwood Log",
   "block.javafinal.stripped_bloodwood_wood": "Stripped Bloodwood Wood",
   "block.javafinal.bloodwood_leaves": "Bloodwood Leaves",
-  "block.javafinal.bloodwood_sapling": "Bloodwood Sapling"
+  "block.javafinal.bloodwood_sapling": "Bloodwood Sapling",
+
+  "item.javafinal.clippy_spawn_egg": "Clippy Spawn Egg",
+  "entity.mccourse.clippy": "Clippy"
 }

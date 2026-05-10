@@ -90,6 +90,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.GOJI_BERRIES.get());
 
         saplingItem(ModBlocks.BLOODWOOD_SAPLING);
+
+        withExistingParent(ModItems.CLIPPY_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
         return withExistingParent(item.getId().getPath(),

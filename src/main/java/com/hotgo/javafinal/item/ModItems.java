@@ -2,6 +2,7 @@ package com.hotgo.javafinal.item;
 
 import com.hotgo.javafinal.JavaFinal;
 import com.hotgo.javafinal.block.ModBlocks;
+import com.hotgo.javafinal.entity.ModEntities;
 import com.hotgo.javafinal.item.custom.ChiselItem;
 import com.hotgo.javafinal.item.custom.FuelItem;
 import com.hotgo.javafinal.item.custom.HammerItem;
@@ -11,6 +12,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -162,6 +164,10 @@ public class ModItems {
 
     public static final DeferredItem<Item> GOJI_BERRIES = ITEMS.register("goji_berries",
             () -> new ItemNameBlockItem(ModBlocks.GOJI_BERRY_BUSH.get(), new Item.Properties().food(ModFoodProperties.GOJI_BERRY)));
+
+    public static final DeferredItem<Item> CLIPPY_SPAWN_EGG = ITEMS.register("clippy_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.CLIPPY, 0x31afaf, 0xffac00,
+                    new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

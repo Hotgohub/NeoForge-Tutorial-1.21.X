@@ -4,11 +4,14 @@ import com.hotgo.javafinal.block.ModBlocks;
 import com.hotgo.javafinal.component.ModDataComponents;
 import com.hotgo.javafinal.effect.ModEffects;
 import com.hotgo.javafinal.enchantment.ModEnchantmentEffects;
+import com.hotgo.javafinal.entity.ModEntities;
+import com.hotgo.javafinal.entity.client.ClippyRenderer;
 import com.hotgo.javafinal.item.ModCreativeModeTabs;
 import com.hotgo.javafinal.item.ModItems;
 import com.hotgo.javafinal.potion.ModPotions;
 import com.hotgo.javafinal.sound.ModSounds;
 import com.hotgo.javafinal.util.ModItemProperties;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -57,6 +60,7 @@ public class JavaFinal {
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
 
+        ModEntities.register(modEventBus);
 
         ModEnchantmentEffects.register(modEventBus);
         // Register the item to a creative tab
@@ -94,6 +98,7 @@ public class JavaFinal {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
             ModItemProperties.addCustomItemProperties();
+            EntityRenderers.register(ModEntities.CLIPPY.get(), ClippyRenderer::new);
         }
     }
 }

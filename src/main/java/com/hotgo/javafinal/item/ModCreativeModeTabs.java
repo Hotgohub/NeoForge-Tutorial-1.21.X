@@ -65,6 +65,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.CLIPPY_SPAWN_EGG);
 
+                        output.accept(ModItems.SKINEATER_SPAWN_EGG);
+
 
                     }).build());
 

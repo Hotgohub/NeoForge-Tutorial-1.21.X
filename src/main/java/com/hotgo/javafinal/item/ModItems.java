@@ -169,6 +169,10 @@ public class ModItems {
             () -> new DeferredSpawnEggItem(ModEntities.CLIPPY, 0x31afaf, 0xffac00,
                     new Item.Properties()));
 
+    public static final DeferredItem<Item> SKINEATER_SPAWN_EGG = ITEMS.register("skineater_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.SKINEATER, 0xF3D0C5, 0x000000,
+                    new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

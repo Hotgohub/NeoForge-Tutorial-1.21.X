@@ -6,6 +6,7 @@ import com.hotgo.javafinal.effect.ModEffects;
 import com.hotgo.javafinal.enchantment.ModEnchantmentEffects;
 import com.hotgo.javafinal.entity.ModEntities;
 import com.hotgo.javafinal.entity.client.ClippyRenderer;
+import com.hotgo.javafinal.entity.client.SkineaterRenderer;
 import com.hotgo.javafinal.item.ModCreativeModeTabs;
 import com.hotgo.javafinal.item.ModItems;
 import com.hotgo.javafinal.potion.ModPotions;
@@ -99,6 +100,7 @@ public class JavaFinal {
         static void onClientSetup(FMLClientSetupEvent event) {
             ModItemProperties.addCustomItemProperties();
             EntityRenderers.register(ModEntities.CLIPPY.get(), ClippyRenderer::new);
+            EntityRenderers.register(ModEntities.SKINEATER.get(), SkineaterRenderer::new);
         }
     }
 }

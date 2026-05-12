@@ -79,7 +79,7 @@ public class ClippyModel<T extends ClippyEntity> extends HierarchicalModel<T> {
 
     @Override
     public void setupAnim(ClippyEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netBodyYaw, float bodyPitch) {
-        //this tells it to not be add itive for each animation
+        //this tells it to not be additive for each animation
         this.root().getAllParts().forEach(ModelPart::resetPose);
         this.applyBodyRotation(netBodyYaw, bodyPitch);
 

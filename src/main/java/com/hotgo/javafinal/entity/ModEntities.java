@@ -2,6 +2,7 @@ package com.hotgo.javafinal.entity;
 
 import com.hotgo.javafinal.JavaFinal;
 import com.hotgo.javafinal.entity.custom.ClippyEntity;
+import com.hotgo.javafinal.entity.custom.SkineaterEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -18,6 +19,13 @@ public class ModEntities {
     public static final Supplier<EntityType<ClippyEntity>> CLIPPY =
             ENTITY_TYPES.register("clippy", () -> EntityType.Builder.of(ClippyEntity::new, MobCategory.CREATURE)
                     .sized(0.75f, 0.85f).build("clippy"));
+
+    public static final Supplier<EntityType<SkineaterEntity>> SKINEATER =
+            ENTITY_TYPES.register("skineater", () ->
+                    EntityType.Builder.<SkineaterEntity>of(SkineaterEntity::new, MobCategory.MONSTER)
+                            .sized(0.6f, 1.9f)
+                            .build("skineater")
+            );
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

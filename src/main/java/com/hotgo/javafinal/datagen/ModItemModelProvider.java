@@ -94,6 +94,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(ModItems.CLIPPY_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
         withExistingParent(ModItems.SKINEATER_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+
+        basicItem(ModItems.SNAKE_EATER_MUSIC_DISK.get());
     }
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
         return withExistingParent(item.getId().getPath(),

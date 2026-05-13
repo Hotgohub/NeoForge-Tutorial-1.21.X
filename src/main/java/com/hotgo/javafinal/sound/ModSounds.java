@@ -33,6 +33,9 @@ public class ModSounds {
     public static final Supplier<SoundEvent> BAR_BRAWL = registerSoundEvent("bar_brawl");
     public static final ResourceKey<JukeboxSong> BAR_BRAWL_KEY = createSong("bar_brawl");
 
+    public static final Supplier<SoundEvent> SNAKE_EATER = registerSoundEvent("snake_eater");
+    public static final ResourceKey<JukeboxSong> SNAKE_EATER_KEY = createSong("snake_eater");
+
 
     private static ResourceKey<JukeboxSong> createSong(String name) {
         return ResourceKey.create(Registries.JUKEBOX_SONG, ResourceLocation.fromNamespaceAndPath(JavaFinal.MOD_ID, name));

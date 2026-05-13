@@ -28,6 +28,8 @@ public class ModSoundsProvider extends SoundDefinitionsProvider {
         registerSound(ModSounds.MAGIC_BLOCK_STEP, 1f, 1f, false);
 
         registerSound(ModSounds.BAR_BRAWL, 1f, 1f, true);
+
+        registerSound(ModSounds.SNAKE_EATER, 1f, 1f, true);
     }
 
     private void registerSound(Supplier<SoundEvent> soundEvent, float volume, float pitch, boolean stream) {

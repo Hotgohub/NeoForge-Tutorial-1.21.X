@@ -173,6 +173,9 @@ public class ModItems {
             () -> new DeferredSpawnEggItem(ModEntities.SKINEATER, 0xF3D0C5, 0x000000,
                     new Item.Properties()));
 
+    public static final DeferredItem<Item> SNAKE_EATER_MUSIC_DISK = ITEMS.register("snake_eater_music_disk",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.SNAKE_EATER_KEY).stacksTo(1)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

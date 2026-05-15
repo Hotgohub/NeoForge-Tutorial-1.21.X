@@ -30,6 +30,10 @@ public class ModSoundsProvider extends SoundDefinitionsProvider {
         registerSound(ModSounds.BAR_BRAWL, 1f, 1f, true);
 
         registerSound(ModSounds.SNAKE_EATER, 1f, 1f, true);
+
+        registerSound(ModSounds.SKINEATER_AMBIENT, 1f, 1f, false);
+        registerSound(ModSounds.SKINEATER_HURT, 1f, 1f, false);
+        registerSound(ModSounds.SKINEATER_DEATH, 1f, 1f, false);
     }
 
     private void registerSound(Supplier<SoundEvent> soundEvent, float volume, float pitch, boolean stream) {

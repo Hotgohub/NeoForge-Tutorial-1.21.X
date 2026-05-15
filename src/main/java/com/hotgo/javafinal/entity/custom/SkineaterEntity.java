@@ -1,12 +1,15 @@
 package com.hotgo.javafinal.entity.custom;
 
 import com.hotgo.javafinal.entity.SkineaterVariant;
+import com.hotgo.javafinal.sound.ModSounds;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobSpawnType;
@@ -112,5 +115,22 @@ public class SkineaterEntity extends Monster {
         SkineaterVariant variant = Util.getRandom(SkineaterVariant.values(), this.random);
         this.setVariant(variant);
         return super.finalizeSpawn(level, difficulty, spawnType, spawnGroupData);
+    }
+
+    /* SOUNDS */
+
+    @Override
+    protected @Nullable SoundEvent getAmbientSound() {
+        return ModSounds.SKINEATER_AMBIENT.get();
+    }
+
+    @Override
+    protected @Nullable SoundEvent getHurtSound(DamageSource damageSource) {
+        return ModSounds.SKINEATER_HURT.get();
+    }
+
+    @Override
+    protected @Nullable SoundEvent getDeathSound() {
+        return ModSounds.SKINEATER_DEATH.get();
     }
 }

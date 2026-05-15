@@ -2,6 +2,8 @@ package com.hotgo.javafinal.entity.custom;
 
 import com.hotgo.javafinal.entity.ModEntities;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityType;

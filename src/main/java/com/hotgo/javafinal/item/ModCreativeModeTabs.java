@@ -67,7 +67,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.SKINEATER_SPAWN_EGG);
 
-                        output.accept(ModItems.SNAKE_EATER_MUSIC_DISK);
+                        output.accept(ModItems.SNAKE_EATER_MUSIC_DISC);
 
                     }).build());
 

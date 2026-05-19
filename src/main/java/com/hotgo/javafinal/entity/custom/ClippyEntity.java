@@ -1,8 +1,12 @@
 package com.hotgo.javafinal.entity.custom;
 
 import com.hotgo.javafinal.entity.ModEntities;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.BossEvent;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.AnimationState;
@@ -22,6 +26,10 @@ public class ClippyEntity extends Animal {
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
 
+    /*
+    private final ServerBossEvent bossEvent =
+            new ServerBossEvent(Component.literal("Microsoft Clippy"), BossEvent.BossBarColor.WHITE, BossEvent.BossBarOverlay.NOTCHED_20);
+     */
     public ClippyEntity(EntityType<? extends Animal> entityType, Level level) {
         super(entityType, level);
     }
@@ -80,4 +88,25 @@ public class ClippyEntity extends Animal {
             this.setupAnimationStates();
         }
     }
+
+    /* BOSS BAR */
+/*
+    @Override
+    public void startSeenByPlayer(ServerPlayer serverPlayer) {
+        super.startSeenByPlayer(serverPlayer);
+        this.bossEvent.addPlayer(serverPlayer);
+    }
+
+    @Override
+    public void stopSeenByPlayer(ServerPlayer serverPlayer) {
+        super.stopSeenByPlayer(serverPlayer);
+        this.bossEvent.removePlayer(serverPlayer);
+    }
+
+    @Override
+    public void aiStep() {
+        super.aiStep();
+        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
+    }
+ */
 }

@@ -1,65 +1,66 @@
 {
   "item.javafinal.obamium": "Obamium",
-  "tooltip.javafinal.obamium.tooltip": "A strange ore from a strange land.",
   "item.javafinal.raw_obamium": "Raw Obamium",
-  "tooltip.javafinal.raw_obamium.tooltip": "Smelt it to get its pure form.",
   "item.javafinal.chisel": "Chisel",
-  "tooltip.javafinal.chisel.shift_down": "A strange chisel to chip away at your broken heart.",
-  "tooltip.javafinal.chisel": "§lHOLD SHIFT§r",
-
   "item.javafinal.orange_juice": "Orange Juice",
-  "tooltip.javafinal.orange_juice.tooltip": "Drink this to feel refreshed!",
   "item.javafinal.tomato": "Tomato",
-  "tooltip.javafinal.tomato.tooltip": "Juicy and Sweet!",
   "item.javafinal.fire_png": "Fire.png",
-  "tooltip.javafinal.fire_png.tooltip": "§kPlease help. It hurts.§r",
   "item.javafinal.the_white_house": "The White House",
-  "tooltip.javafinal.the_white_house.tooltip": "It's the entire white house. §lHow did you get this?§r",
-
   "item.javafinal.obamium_sword": "Obamium Sword",
   "item.javafinal.obamium_pickaxe": "Obamium Pickaxe",
   "item.javafinal.obamium_shovel": "Obamium Shovel",
   "item.javafinal.obamium_axe": "Obamium Axe",
   "item.javafinal.obamium_hoe": "Obamium Hoe",
-
   "item.javafinal.red_magic": "Red Magic",
   "item.javafinal.raw_red_magic": "Raw Red Magic",
-  "block.javafinal.red_magic_ore": "Red Magic Ore",
-  "block.javafinal.red_magic_deepslate_ore": "Deepslate Red Magic Ore",
-  "block.javafinal.red_magic_nether_ore": "Nether Red Magic Ore",
-  "block.javafinal.red_magic_end_ore": "End Red Magic Ore",
-
   "item.javafinal.obamium_hammer": "Obamium Hammer",
-
   "item.javafinal.obamium_helmet": "Obamium Helmet",
   "item.javafinal.obamium_chestplate": "Obamium Chestplate",
   "item.javafinal.obamium_leggings": "Obamium Leggings",
   "item.javafinal.obamium_boots": "Obamium Boots",
-
   "item.javafinal.red_magic_horse_armor": "Red Magic Horse Armor",
-
   "item.javafinal.hotgo_armor_trim_smithing_template": "Hotgo Trim Template",
-
   "item.javafinal.red_magic_bow": "Red Magic Bow",
-
   "item.javafinal.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.javafinal.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
-
   "item.javafinal.snake_eater_music_disc": "Snake Eater Music Disc",
   "item.javafinal.snake_eater_music_disc.desc": "MGS: Snake Eater - Cynthia Harrell",
-
   "item.javafinal.red_magic_helmet": "Red Magic Helmet",
   "item.javafinal.red_magic_chestplate": "Red Magic Chestplate",
   "item.javafinal.red_magic_leggings": "Red Magic Leggings",
   "item.javafinal.red_magic_boots": "Red Magic Boots",
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+  "item.javafinal.tomato_seeds": "Tomato Seeds",
+  "item.javafinal.goji_berries": "Goji Berries",
+  "item.javafinal.clippy_spawn_egg": "Clippy Spawn Egg",
+  "item.javafinal.skineater_spawn_egg": "Skineater Spawn Egg",
+  "item.javafinal.tomahawk": "Tomahawk",
 
-  "block.javafinal.obamium_block": "Block of Obamium",
+
+  "tooltip.javafinal.obamium.tooltip": "A strange ore from a strange land.",
+  "tooltip.javafinal.raw_obamium.tooltip": "Smelt it to get its pure form.",
+  "tooltip.javafinal.chisel": "§lHOLD SHIFT§r",
+  "tooltip.javafinal.chisel.shift_down": "A strange chisel to chip away at your broken heart.",
+  "tooltip.javafinal.orange_juice.tooltip": "Drink this to feel refreshed!",
+  "tooltip.javafinal.tomato.tooltip": "Juicy and Sweet!",
+  "tooltip.javafinal.fire_png.tooltip": "§kPlease help. It hurts.§r",
+  "tooltip.javafinal.the_white_house.tooltip": "It's the entire white house. §lHow did you get this?§r",
   "tooltip.javafinal.obamium_block.tooltip": "A condensed, purer form of that ore you found.",
+  "tooltip.javafinal.magic_block.tooltip": "A magical block that can make your §lwildest§r dreams come true.",
+
+
+
+  "block.javafinal.red_magic_ore": "Red Magic Ore",
+  "block.javafinal.red_magic_deepslate_ore": "Deepslate Red Magic Ore",
+  "block.javafinal.red_magic_nether_ore": "Nether Red Magic Ore",
+  "block.javafinal.red_magic_end_ore": "End Red Magic Ore",
+  "block.javafinal.obamium_block": "Block of Obamium",
   "block.javafinal.obamium_ore": "Obamium Ore",
   "block.javafinal.obamium_deepslate_ore": "Deepslate Obamium Ore",
   "block.javafinal.obamium_nether_ore": "Nether Obamium Ore",
   "block.javafinal.obamium_end_ore": "End Obamium Ore",
-
   "block.javafinal.obamium_stairs": "Obamium Stairs",
   "block.javafinal.obamium_slab": "Obamium Slab",
   "block.javafinal.obamium_pressure_plate": "Obamium Pressure Plate",
@@ -69,37 +70,10 @@
   "block.javafinal.obamium_wall": "Obamium Wall",
   "block.javafinal.obamium_door": "Obamium Door",
   "block.javafinal.obamium_trapdoor": "Obamium Trapdoor",
-
   "block.javafinal.red_lamp": "Red Lamp",
-
   "block.javafinal.magic_block": "Magic Block",
-  "tooltip.javafinal.magic_block.tooltip": "A magical block that can make your §lwildest§r dreams come true.",
-
-  "creativetab.javafinal.obama_items": "Obama Items",
-  "creativetab.javafinal.obama_blocks": "Obama Blocks",
-
-  "trim_pattern.javafinal.hotgo": "Hotgo Armor Trim",
-  "trim_material.javafinal.red_magic": "Red Magic Material",
-  "effect.javafinal.slimey": "Slimey",
-
-  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
-  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
-  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
-
-  "painting.javafinal.pochita.title": "Pochita",
-  "painting.javafinal.pochita.author": "Tatsuki Fujimoto",
-  "painting.javafinal.me.title": "Jonah",
-  "painting.javafinal.me.author": "My Phone",
-  "painting.javafinal.weird_bugger.title": "Weird Bugger",
-  "painting.javafinal.weird_bugger.author": "idk",
-
-  "enchantment.javafinal.lightning_striker": "Lightning Striker",
-
-  "item.javafinal.tomato_seeds": "Tomato Seeds",
   "block.javafinal.tomato_crop": "Tomato Crop",
-  "item.javafinal.goji_berries": "Goji Berries",
   "block.javafinal.goji_berry_bush": "Goji Berry Bush",
-
   "block.javafinal.bloodwood_log": "Bloodwood Log",
   "block.javafinal.bloodwood_planks": "Bloodwood Planks",
   "block.javafinal.bloodwood_wood": "Bloodwood Wood",
@@ -108,9 +82,28 @@
   "block.javafinal.bloodwood_leaves": "Bloodwood Leaves",
   "block.javafinal.bloodwood_sapling": "Bloodwood Sapling",
 
-  "item.javafinal.clippy_spawn_egg": "Clippy Spawn Egg",
-  "entity.mccourse.clippy": "Clippy",
 
-  "item.javafinal.skineater_spawn_egg": "Skineater Spawn Egg",
-  "entity.mccourse.skineater": "Skineater"
+  "creativetab.javafinal.obama_items": "Obama Items",
+  "creativetab.javafinal.obama_blocks": "Obama Blocks",
+
+
+  "trim_pattern.javafinal.hotgo": "Hotgo Armor Trim",
+  "trim_material.javafinal.red_magic": "Red Magic Material",
+  "effect.javafinal.slimey": "Slimey",
+
+
+  "painting.javafinal.pochita.title": "Pochita",
+  "painting.javafinal.pochita.author": "Tatsuki Fujimoto",
+  "painting.javafinal.me.title": "Jonah",
+  "painting.javafinal.me.author": "My Phone",
+  "painting.javafinal.weird_bugger.title": "Weird Bugger",
+  "painting.javafinal.weird_bugger.author": "idk",
+
+
+  "enchantment.javafinal.lightning_striker": "Lightning Striker",
+
+
+  "entity.mccourse.clippy": "Clippy",
+  "entity.mccourse.skineater": "Skineater",
+  "entity.mccourse.tomahawk": "Tomahawk"
 }

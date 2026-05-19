@@ -3,6 +3,7 @@ package com.hotgo.javafinal.entity;
 import com.hotgo.javafinal.JavaFinal;
 import com.hotgo.javafinal.entity.custom.ClippyEntity;
 import com.hotgo.javafinal.entity.custom.SkineaterEntity;
+import com.hotgo.javafinal.entity.custom.TomahawkProjectileEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -26,6 +27,12 @@ public class ModEntities {
                             .sized(0.6f, 1.9f)
                             .build("skineater")
             );
+
+    public static final Supplier<EntityType<TomahawkProjectileEntity>> TOMAHAWK =
+            ENTITY_TYPES.register("tomahawk", () -> EntityType.Builder.<TomahawkProjectileEntity>of(TomahawkProjectileEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 1.15f)
+                    .build("tomahawk"));
+
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

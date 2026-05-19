@@ -69,6 +69,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.SNAKE_EATER_MUSIC_DISC);
 
+                        output.accept(ModItems.TOMAHAWK);
+
                     }).build());
 
     public static final Supplier<CreativeModeTab> OBAMA_BLOCKS_TAB = CREATIVE_MODE_TAB.register("obama_blocks_tab",

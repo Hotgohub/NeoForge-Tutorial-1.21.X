@@ -4,6 +4,7 @@ import com.hotgo.javafinal.JavaFinal;
 import com.hotgo.javafinal.entity.ModEntities;
 import com.hotgo.javafinal.entity.client.ClippyModel;
 import com.hotgo.javafinal.entity.client.SkineaterModel;
+import com.hotgo.javafinal.entity.client.TomahawkProjectileModel;
 import com.hotgo.javafinal.entity.custom.ClippyEntity;
 import com.hotgo.javafinal.entity.custom.SkineaterEntity;
 import net.minecraft.world.entity.SpawnPlacementTypes;
@@ -21,6 +22,7 @@ public class ModEventBusEvents {
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ClippyModel.LAYER_LOCATION, ClippyModel::createBodyLayer);
         event.registerLayerDefinition(SkineaterModel.LAYER_LOCATION, SkineaterModel::createBodyLayer);
+        event.registerLayerDefinition(TomahawkProjectileModel.LAYER_LOCATION, TomahawkProjectileModel::createBodyLayer);
     }
 
     @SubscribeEvent

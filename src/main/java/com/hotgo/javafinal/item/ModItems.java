@@ -3,10 +3,7 @@ package com.hotgo.javafinal.item;
 import com.hotgo.javafinal.JavaFinal;
 import com.hotgo.javafinal.block.ModBlocks;
 import com.hotgo.javafinal.entity.ModEntities;
-import com.hotgo.javafinal.item.custom.ChiselItem;
-import com.hotgo.javafinal.item.custom.FuelItem;
-import com.hotgo.javafinal.item.custom.HammerItem;
-import com.hotgo.javafinal.item.custom.ModArmorItem;
+import com.hotgo.javafinal.item.custom.*;
 import com.hotgo.javafinal.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -175,6 +172,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> SNAKE_EATER_MUSIC_DISC = ITEMS.register("snake_eater_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.SNAKE_EATER_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> TOMAHAWK = ITEMS.register("tomahawk",
+            () -> new TomahawkItem(new Item.Properties().stacksTo(16)));
 
 
     public static void register(IEventBus eventBus) {

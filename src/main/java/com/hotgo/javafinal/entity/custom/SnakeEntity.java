@@ -25,13 +25,13 @@ public class SnakeEntity extends PathfinderMob {
 
     @Override
     protected void registerGoals() {
-//        this.goalSelector.addGoal(1, new FloatGoal(this));
-//        this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.0, false));
-//        this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 0.8));
-//        this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 8.0F));
-//        this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
-//
-//        this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
-//        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Player.class, true));
+        this.goalSelector.addGoal(1, new FloatGoal(this));
+        this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.0, false));
+        this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 0.8));
+        this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 8.0F));
+        this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
+
+        this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
+        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Player.class, true));
     }
 }

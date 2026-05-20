@@ -7,6 +7,7 @@ import com.hotgo.javafinal.entity.client.SkineaterModel;
 import com.hotgo.javafinal.entity.client.TomahawkProjectileModel;
 import com.hotgo.javafinal.entity.custom.ClippyEntity;
 import com.hotgo.javafinal.entity.custom.SkineaterEntity;
+import com.hotgo.javafinal.entity.custom.SnakeEntity;
 import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -29,6 +30,7 @@ public class ModEventBusEvents {
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntities.CLIPPY.get(), ClippyEntity.createAttributes().build());
         event.put(ModEntities.SKINEATER.get(), SkineaterEntity.createAttributes().build());
+        event.put(ModEntities.SNAKE.get(), SnakeEntity.createAttributes().build());
     }
 
     @SubscribeEvent

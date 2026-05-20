@@ -10,6 +10,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import com.hotgo.javafinal.entity.custom.SnakeEntity;
 
 import java.util.function.Supplier;
 
@@ -38,6 +39,10 @@ public class ModEntities {
             ENTITY_TYPES.register("chair_entity", () -> EntityType.Builder.of(ChairEntity::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f)
                     .build("chair_entity"));
+    public static final Supplier<EntityType<SnakeEntity>> SNAKE =
+            ENTITY_TYPES.register("snake", () -> EntityType.Builder.<SnakeEntity>of(SnakeEntity::new, MobCategory.CREATURE)
+                    .sized(0.6f, 1.8f)
+                    .build("snake"));
 
 
     public static void register(IEventBus eventBus) {

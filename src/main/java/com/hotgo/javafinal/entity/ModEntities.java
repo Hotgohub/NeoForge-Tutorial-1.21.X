@@ -1,6 +1,7 @@
 package com.hotgo.javafinal.entity;
 
 import com.hotgo.javafinal.JavaFinal;
+import com.hotgo.javafinal.entity.custom.ChairEntity;
 import com.hotgo.javafinal.entity.custom.ClippyEntity;
 import com.hotgo.javafinal.entity.custom.SkineaterEntity;
 import com.hotgo.javafinal.entity.custom.TomahawkProjectileEntity;
@@ -32,6 +33,11 @@ public class ModEntities {
             ENTITY_TYPES.register("tomahawk", () -> EntityType.Builder.<TomahawkProjectileEntity>of(TomahawkProjectileEntity::new, MobCategory.MISC)
                     .sized(0.5f, 1.15f)
                     .build("tomahawk"));
+
+    public static final Supplier<EntityType<ChairEntity>> CHAIR_ENTITY =
+            ENTITY_TYPES.register("chair_entity", () -> EntityType.Builder.of(ChairEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f)
+                    .build("chair_entity"));
 
 
     public static void register(IEventBus eventBus) {

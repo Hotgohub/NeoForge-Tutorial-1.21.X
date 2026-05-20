@@ -5,6 +5,7 @@ import com.hotgo.javafinal.component.ModDataComponents;
 import com.hotgo.javafinal.effect.ModEffects;
 import com.hotgo.javafinal.enchantment.ModEnchantmentEffects;
 import com.hotgo.javafinal.entity.ModEntities;
+import com.hotgo.javafinal.entity.client.ChairRenderer;
 import com.hotgo.javafinal.entity.client.ClippyRenderer;
 import com.hotgo.javafinal.entity.client.SkineaterRenderer;
 import com.hotgo.javafinal.entity.client.TomahawkProjectileRenderer;
@@ -103,6 +104,8 @@ public class JavaFinal {
             EntityRenderers.register(ModEntities.CLIPPY.get(), ClippyRenderer::new);
             EntityRenderers.register(ModEntities.SKINEATER.get(), SkineaterRenderer::new);
             EntityRenderers.register(ModEntities.TOMAHAWK.get(), TomahawkProjectileRenderer::new);
+
+            EntityRenderers.register(ModEntities.CHAIR_ENTITY.get(), ChairRenderer::new);
         }
     }
 }

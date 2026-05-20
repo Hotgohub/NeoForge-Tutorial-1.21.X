@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "javafinal:block/chair"
+    },
+    "facing=south": {
+      "model": "javafinal:block/chair",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "javafinal:block/chair",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "javafinal:block/chair",
+      "y": 270
+    }
+  }
+}

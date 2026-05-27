@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "javafinal:dingus_poi",
+      "required": false
+    }
+  ]
+}

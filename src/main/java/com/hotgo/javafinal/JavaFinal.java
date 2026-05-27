@@ -11,6 +11,7 @@ import com.hotgo.javafinal.item.ModItems;
 import com.hotgo.javafinal.potion.ModPotions;
 import com.hotgo.javafinal.sound.ModSounds;
 import com.hotgo.javafinal.util.ModItemProperties;
+import com.hotgo.javafinal.villager.ModVillagers;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -65,6 +66,8 @@ public class JavaFinal {
         ModEnchantmentEffects.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
+        ModVillagers.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

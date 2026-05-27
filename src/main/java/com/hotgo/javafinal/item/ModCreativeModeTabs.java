@@ -71,6 +71,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.TOMAHAWK);
 
+                        output.accept(ModItems.RADIATION_STAFF);
+
                     }).build());
 
     public static final Supplier<CreativeModeTab> OBAMA_BLOCKS_TAB = CREATIVE_MODE_TAB.register("obama_blocks_tab",

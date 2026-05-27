@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "R": {
+      "item": "javafinal:red_magic"
+    }
+  },
+  "pattern": [
+    " G ",
+    "GRG",
+    " G "
+  ],
+  "result": {
+    "count": 1,
+    "id": "javafinal:red_lamp"
+  }
+}

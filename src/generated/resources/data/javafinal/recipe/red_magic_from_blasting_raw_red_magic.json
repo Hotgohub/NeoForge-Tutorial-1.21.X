@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "red_magic",
+  "ingredient": {
+    "item": "javafinal:raw_red_magic"
+  },
+  "result": {
+    "count": 1,
+    "id": "javafinal:red_magic"
+  }
+}

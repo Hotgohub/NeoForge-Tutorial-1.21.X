@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "javafinal:block/bloodwood_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "javafinal:block/bloodwood_wood"
+    },
+    "axis=z": {
+      "model": "javafinal:block/bloodwood_wood_horizontal",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "javafinal:block/bloodwood_log",
+    "side": "javafinal:block/bloodwood_log"
+  }
+}

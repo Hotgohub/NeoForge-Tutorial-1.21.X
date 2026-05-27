@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "javafinal:block/red_lamp_off"
+    },
+    "clicked=true": {
+      "model": "javafinal:block/red_lamp_on"
+    }
+  }
+}

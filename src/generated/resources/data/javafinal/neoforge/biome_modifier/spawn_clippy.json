@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "minecraft:forest",
+    "minecraft:plains"
+  ],
+  "spawners": {
+    "type": "javafinal:clippy",
+    "maxCount": 4,
+    "minCount": 2,
+    "weight": 20
+  }
+}

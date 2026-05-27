@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "javafinal:red_magic"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "R R"
+  ],
+  "result": {
+    "count": 1,
+    "id": "javafinal:red_magic_helmet"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "values": {
+    "javafinal:tomato": {
+      "chance": 0.45
+    },
+    "javafinal:tomato_seeds": {
+      "chance": 0.25
+    }
+  }
+}

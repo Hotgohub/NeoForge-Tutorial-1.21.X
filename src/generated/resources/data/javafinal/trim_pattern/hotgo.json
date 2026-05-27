@@ -1,0 +1,8 @@
+{
+  "asset_id": "javafinal:hotgo",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.javafinal.hotgo"
+  },
+  "template_item": "javafinal:hotgo_armor_trim_smithing_template"
+}

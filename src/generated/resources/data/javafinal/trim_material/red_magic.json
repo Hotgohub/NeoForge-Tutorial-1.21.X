@@ -1,0 +1,9 @@
+{
+  "asset_name": "red_magic",
+  "description": {
+    "color": "#031CFC",
+    "translate": "trim_material.javafinal.red_magic"
+  },
+  "ingredient": "javafinal:red_magic",
+  "item_model_index": 0.4
+}

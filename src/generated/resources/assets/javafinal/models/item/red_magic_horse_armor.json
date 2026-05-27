@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "javafinal:item/red_magic_horse_armor"
+  }
+}
